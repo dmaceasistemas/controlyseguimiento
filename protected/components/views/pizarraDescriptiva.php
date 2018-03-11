@@ -1,0 +1,34 @@
+<html>
+<?php
+
+ if (!Yii::app()->user->isGuest){
+ $criterio = new CDbCriteria;
+            $criterio->condition='int_idsistema=4';
+            $modulosistemaList= ModuloSistema::model()->with('funcionalidades')->findAll($criterio);
+  ?>
+  <div class="grupo">
+ <table width="100%" class ='table2'>
+
+ <?php foreach($modulosistemaList as $n=>$model){
+     foreach($model->funcionalidades  as $m=>$funcionalidades){
+      if ($funcionalidades->str_nombre!='Tips'){
+     ?>
+     <tr>
+        <td width="40"><img src="<?php echo $funcionalidades->str_icono?>" width="36" height="36"/></td>
+        <td><strong><?php echo $funcionalidades->str_nombre?></strong>
+        <p> <?php echo $funcionalidades->str_descripcion ?> </p>
+        </td>
+     </tr>
+
+     <?php
+        }
+       }
+      }
+     ?>
+   </table>
+   </div>
+   <?php } else {} ?>
+
+</html>
+   
+  

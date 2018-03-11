@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+  <name>xegallery</name>
+  <creationDate>12.22.2005</creationDate>
+  <author>Andreas Kuster</author>
+  <copyright>Xe-Media Communications</copyright>
+  <authorEmail>andreas.kuster@xe-media.ch</authorEmail>
+  <authorUrl>www.xe-media.ch/software</authorUrl>
+  <version>1.0</version>
+  <description>Xe-GalleryV1 Lite - Flash based Photo Gallery - powered by Xe-Media Communications</description>
+  <files>
+    <filename>xegallery.php</filename>
+	<filename>Xe-GalleryV1LiteV1.swf</filename>
+  </files>
+    <images>
+    <filename>images/pixel_trans.gif</filename>
+  </images>
+  <install>
+    <queries>
+      <query>DROP TABLE IF EXISTS `#__xegallery`</query>
+      <query>
+CREATE TABLE `#__xegallery` (
+  `id` int(11) NOT NULL auto_increment,
+  `catid` int(11) NOT NULL default '0',
+  `imgtitle` text NOT NULL,
+  `imgauthor` varchar(50) default NULL,
+  `imgtext` text NOT NULL,
+  `imgdate` varchar(20) default NULL,
+  `imgcounter` int(11) NOT NULL default '0',
+  `imgvotes` int(11) NOT NULL default '0',
+  `imgvotesum` int(11) NOT NULL default '0',
+  `published` tinyint(1) NOT NULL default '0',
+  `imgfilename` varchar(50) NOT NULL default '',
+  `imgthumbname` varchar(50) NOT NULL default '',
+  `ordering` int(11) NOT NULL default '0',
+  `checked_out` int(11) NOT NULL default '0',
+  `owner` varchar(50) NOT NULL default '',
+  `approved` int(1) NOT NULL default '0',
+  `useruploaded` int(1) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM ;
+      </query>
+      <query>DROP TABLE IF EXISTS `#__xegallery_catg`;</query>
+     <query>
+      CREATE TABLE `#__xegallery_catg` (
+  `cid` int(11) NOT NULL auto_increment,
+  `name` varchar(255) NOT NULL default '',
+  `parent` varchar(255) NOT NULL default '0',
+  `description` text,
+  `ordering` int(11) NOT NULL default '0',
+ `access` tinyint(3) unsigned NOT NULL default '0',
+  `published` char(1) NOT NULL default '1',
+  PRIMARY KEY  (`cid`)
+) TYPE=MyISAM;
+      </query>
+    </queries>
+  </install>
+  <uninstall>
+    <queries>
+      <query>DELETE FROM `#__xegallery`</query>
+      <query>DROP TABLE `#__xegallery`</query>
+      <query>DROP TABLE `#__xegallery_catg`</query>
+    </queries>
+  </uninstall>
+    <installfile>install.xegallery.php</installfile>
+    <uninstallfile>uninstall.xegallery.php</uninstallfile>
+  <administration>
+    <menu>XeGalleryLite</menu>
+    <submenu>
+      <menu act="pictures">Photos</menu>
+      <menu act="showcatg">Categories</menu>
+      <menu act="upload">Upload Photos</menu>
+      <menu act="settings">Settings</menu>
+    </submenu>
+    <files>
+      <filename>admin.xegallery.html.php</filename>
+      <filename>admin.xegallery.php</filename>
+      <filename>class.xegallery.php</filename>
+      <filename>config.xegallery.php</filename>
+      <filename>install.xegallery.php</filename>
+      <filename>toolbar.xegallery.html.php</filename>
+      <filename>toolbar.xegallery.php</filename>
+      <filename>uninstall.xegallery.php</filename>
+    </files>
+</administration>
+</mosinstall>

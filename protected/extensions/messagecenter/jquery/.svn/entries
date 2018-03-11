@@ -1,0 +1,57 @@
+9
+
+dir
+3846
+svn://172.16.0.250/argos/intranetPedroCamejo/protected/extensions/messagecenter/jquery
+svn://172.16.0.250/argos
+
+
+
+2009-08-07T14:16:46.768041Z
+3577
+tchinchilla
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9eea0101-f6a7-43ed-b6b7-af5f0e6e244f
+
+images
+dir
+
+jquery.message-center.css
+file
+
+
+
+
+2009-01-20T06:15:28.000000Z
+79224f10601189cd85aff0369fe85640
+2009-08-04T18:52:29.445190Z
+3547
+tchinchilla
+has-props
+
+jquery.message-center.js
+file
+
+
+
+
+2009-01-20T15:38:29.000000Z
+c74ff0af076d27ec9f5d40b8a5b28192
+2009-08-04T18:52:29.445190Z
+3547
+tchinchilla
+has-props
+

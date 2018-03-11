@@ -1,0 +1,22 @@
+<h2>Listado de Productores</h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Nuevo Tipo de Productor',array('create')); ?>]
+[<?php echo CHtml::link('Control de Tipo de Productor',array('admin')); ?>]
+</div>
+
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>
+
+<?php foreach($models as $n=>$model): ?>
+<div class="item">
+<?php echo CHtml::encode($model->getAttributeLabel('id')); ?>:
+<?php echo CHtml::link($model->id,array('show','id'=>$model->id)); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('str_descripcion')); ?>:
+<?php echo CHtml::encode($model->str_descripcion); ?>
+<br/>
+
+</div>
+<?php endforeach; ?>
+<br/>
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>

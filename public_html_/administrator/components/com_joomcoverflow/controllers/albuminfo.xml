@@ -1,0 +1,46 @@
+<artworkinfo>
+			<albuminfo>
+				<artLocation>images/coverflow/album1.jpg</artLocation>
+				<artist>joomlaos.es</artist>
+				<albumName>Joomlaos. Soluciones web Joomla</albumName>
+				<artistLink>http://joomlaos.es</artistLink>
+				<albumLink>http://joomlaos.es</albumLink>
+			</albuminfo>
+	
+			
+			<albuminfo>
+				<artLocation>images/coverflow/album2.jpg</artLocation>
+				<artist>hacce.com</artist>
+				<albumName>Hacce Soluciones TIC. Diseño web Vigo - Pontevedra - Galicia</albumName>
+				<artistLink>http://hacce.com</artistLink>
+				<albumLink>http://hacce.com</albumLink>
+			</albuminfo>
+	
+			
+			<albuminfo>
+				<artLocation>images/coverflow/album3.jpg</artLocation>
+				<artist>blog.hacce.com</artist>
+				<albumName>Hacce Soliciones TIC. Blog Corporativo</albumName>
+				<artistLink>http://blog.hacce.com</artistLink>
+				<albumLink>http://blog.hacce.com</albumLink>
+			</albuminfo>
+	
+			
+			<albuminfo>
+				<artLocation>images/coverflow/album4.jpg</artLocation>
+				<artist>Hacce en Facebook</artist>
+				<albumName>facebook.com/pages/Hacce-Soluciones-TIC/25429283535</albumName>
+				<artistLink>http://www.facebook.com/pages/Hacce-Soluciones-TIC/25429283535</artistLink>
+				<albumLink>http://www.facebook.com/pages/Hacce-Soluciones-TIC/25429283535</albumLink>
+			</albuminfo>
+	
+			
+			<albuminfo>
+				<artLocation>images/coverflow/album5.jpg</artLocation>
+				<artist>inclusion.es</artist>
+				<albumName>Inclusión. Blog de Accesibilidad y Usabilidad Web</albumName>
+				<artistLink>http://inclusion.es</artistLink>
+				<albumLink>http://inclusion.es</albumLink>
+			</albuminfo>
+	
+			</artworkinfo>

@@ -1,0 +1,88 @@
+8
+
+dir
+3950
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected/views/productor
+svn://172.16.0.250/argos
+
+
+
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+
+svn:special svn:externals svn:needs-lock
+
+list.php
+file
+
+
+
+delete
+2009-10-15T21:34:34.000000Z
+a66bde9473d9fca888aa3bd9cd73848f
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+show.php
+file
+
+
+
+
+2009-10-15T21:34:43.000000Z
+5d400850448556798daffcecbc53445e
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+_form.php
+file
+
+
+
+
+2009-10-14T14:29:02.000000Z
+d435700f533831c94972bbafb2316440
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+update.php
+file
+
+
+
+
+2009-10-15T21:34:54.000000Z
+bda577549e8a088a85db0a8cda344829
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+create.php
+file
+
+
+
+
+2009-10-15T21:34:16.000000Z
+4c0251beb2d511614e8ee6b5d7ad77ec
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+admin.php
+file
+
+
+
+
+2009-10-15T21:34:07.000000Z
+5eaf48dbd6508c9ab678d0ed47969be3
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+

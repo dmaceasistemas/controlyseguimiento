@@ -1,0 +1,44 @@
+9
+
+dir
+3846
+svn://172.16.0.250/argos/intranetPedroCamejo/protected/extensions/jui/jquery/css/vader
+svn://172.16.0.250/argos
+
+
+
+2009-08-11T15:16:57.463069Z
+3592
+imedina
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9eea0101-f6a7-43ed-b6b7-af5f0e6e244f
+
+images
+dir
+
+jquery-ui-1.7.1.custom.css
+file
+
+
+
+
+2009-08-11T15:37:27.000000Z
+209949a50975856685c1b610c71c3580
+2009-08-11T15:16:57.463069Z
+3592
+imedina
+has-props
+

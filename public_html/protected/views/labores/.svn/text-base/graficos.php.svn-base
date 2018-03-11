@@ -1,0 +1,40 @@
+<h2>Reporte de Labores</h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Nueva Labor',array('create')); ?>]
+[<?php echo CHtml::link('Control de Labores',array('admin')); ?>]
+</div>
+<?php $labores->attributes=$_POST['Labores']; ?>
+<div class="yiiForm">
+    <? if(isset($_POST['Labores']) &&  $labores->id_servicio != ""){
+            
+           //print("Este es la fecha_Inicio: ".$fecha1." y date es: ".$labores->dtm_fecha." y fecha_Fin: ".$fecha2." y obs es: ".$labores->str_observaciones);
+    ?>
+<script type='text/javascript'>
+window.open('http://172.16.0.250/icaro_reporter/web/seguimiento/<? print($labores->id_servicio)?>', false);
+</script>
+    <? } ?>
+
+        <?php echo CHtml::form(CHtml::normalizeUrl(array('graficos','id_sede'=>$labores->id_sede))); //,'id'=> $cedper ?>
+        <?php echo CHtml::errorSummary($labores); ?>
+
+<table width="49%" border="0" align="center">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>    
+    <tr>
+    <td><?php $rep=Reportes::model()->findAll();  ?>
+      <?php $reps=CHtml::listData($rep,'str_nombrereporte','str_descripcion'); ?>
+      <?php echo CHtml::activeLabelEx($labores,'Tipo de Reporte :   '); ?> </td>
+    <td><?php echo CHtml::activeDropDownList($labores,'id_servicio', $reps, array('empty'=>'Seleccione...')); ?></td>
+    <td><?php echo CHtml::submitButton('Ir'); ?></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div><!-- yiiForm -->

@@ -1,0 +1,34 @@
+<mp3config>
+
+    <!-- Elija si quiere el reproductor mp3 se inicie automaticamente y si desea reproducción aleatoria (true/flase)-->    
+    <autostart>false</autostart>
+    <shuffle>false</shuffle>
+
+    <!-- Elija el tipo de reproducción para el Repromp3 (none, one, all or list (la lista entera una vez)) -->   
+    <repeat>list</repeat>
+    
+    <!-- Elija el volumen del reproductor (0 to 100) -->  
+    <volume>80</volume>
+    
+    <!-- Elija si quiere mostrar el Display y la Lista de reproduccion completa (true or false) -->
+	<showdisplay>true</showdisplay>
+    <showplaylist>true</showplaylist>
+    
+    
+    <!-- Elija en que ventana quiere que se abran los enlaces (_blank, _self, _top or a framename) --> 
+    <linktarget>_top</linktarget>
+        
+    <!-- Elija los colores del Repromp3(hexadecimal, de 0x000000 a 0xffffff) -->  
+    <backcolor>0x000000</backcolor>
+    <frontcolor>0xffffff</frontcolor>
+    <lightcolor>0xffffff</lightcolor>
+
+    <!-- Puedes escojer una imágen JPG como fondo del reproductor mp3 (url para el archivo jpg) --> 
+    <jpgfile></jpgfile>
+    
+    <!-- (Para webmasters) URL de un script, llamado al inicio y final de una canción --> 
+    <!-- Los siguientes vars son enviados con POST: playlist, title, file, identifier, action ('start' or 'complete') --> 
+    <callback></callback>
+    
+        
+</mp3config>

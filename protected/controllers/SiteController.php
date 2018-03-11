@@ -1,0 +1,124 @@
+<?php
+
+class SiteController extends CController
+{
+	public $verificador;
+    public $trabajador;
+	public function actions()
+	{
+		return array(
+			// captcha action renders the CAPTCHA image
+			// this is used by the contact page
+			'captcha'=>array(
+				'class'=>'CCaptchaAction',
+				'backColor'=>0xEBF4FB,
+			),
+		);
+	}
+
+
+	public function actionIndex()
+	{
+
+		$this->render('index');
+	}
+
+
+	public function actionContact()
+	{
+		$contact=new ContactForm;
+		if(isset($_POST['ContactForm']))
+		{
+			$contact->attributes=$_POST['ContactForm'];
+			if($contact->validate())
+			{
+				$headers="From: {$contact->email}\r\nReply-To: {$contact->email}";
+				mail(Yii::app()->params['adminEmail'],$contact->subject,$contact->body,$headers);
+				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+				$this->refresh();
+			}
+		}
+		$this->render('contact',array('contact'=>$contact));
+	}
+
+
+    public function actionValidar()
+	{
+		$validar=new ValidadorForm;
+        $tipoDocumento  = new TipoDocumento();
+        $criterio = new CDbCriteria;
+        $criterio->order='seq_idtip';
+        // $data = CHtml::listData($data, 'num', 'feature_name');
+        $data = TipoDocumento::model()->findAll($criterio);
+        $tiposDocumento = CHtml::listData($data, 'seq_idtip', 'nomtip');
+		if(isset($_POST['ValidadorForm']))
+		{
+			$validar->attributes=$_POST['ValidadorForm'];
+			if($validar->validate())
+			{
+				$criterio = new CDbCriteria;
+                $criterio->condition="seq_codigo = ".$validar->codigoDocumento." AND  cedper ='".$validar->cedulaTrabajador."' AND  tipdoc=".$validar->tipoDocumento;
+                $verificador = Verificador::model()->find($criterio);
+                //printf($criterio);
+                $criterio = new CDbCriteria;
+                $tipoDocumento = TipoDocumento::model()->findbyPk($validar->tipoDocumento);
+                
+               /* if($verificador===null)
+				throw new CHttpException(950,'El documento no existe!.');
+                
+                $this->redirect(array('ver',
+                                'documento'=>$tipoDocumento->nomtip,
+                                'fecha_documento'=>$verificador->fecha_doc,
+                                'cedula'=>$verificador->cedper,
+                                'nombre'=>$verificador->nomper,
+                                'apellido'=>$verificador->apeper,
+                                'fecha_ingreso'=>$verificador->fecingper,
+                                'cargo'=>$verificador->cargo_per,
+                                'sede'=>$verificador->sede,
+                                'sueldo'=>$verificador->sueintper
+
+                                ));*/
+
+
+
+                //$this->render('ver',array('trabajador'=>$this->trabajador, 'verificador'=>$this->verificador));
+                //$this->redirect(Yii::app()->homeUrl."?r=site/ver");
+
+			}
+		}
+		$this->render('validar', array('validar'=>$validar,'tipoDocumento'=>$tipoDocumento,'tiposDocumento'=>$tiposDocumento));
+	}
+
+    public function actionVer(){
+        $this->render('ver');
+    }
+
+	public function actionLogin(){
+		$form=new LoginForm;
+		// collect user input data
+		if(isset($_POST['LoginForm']))
+		{
+			$form->attributes=$_POST['LoginForm'];
+			// validate user input and redirect to previous page if valid
+			if($form->validate()){
+                if (Yii::app()->user->cambiar_clave)
+                     $this->redirect(Yii::app()->homeUrl."?r=usuario/cambiarclave");
+				else
+                    $this->redirect(Yii::app()->user->returnUrl);
+            }
+		}
+		// display the login form
+		    $this->render('login',array('form'=>$form));
+
+	}
+
+	public function actionLogout()
+	{
+        $usuario = UsuarioEnSistema::model()->findByAttributes(array('int_idusuario'=>Yii::app()->user->id,'int_idsistema'=>4));
+        $usuario->dtm_ultimo_acceso=date("Y-m-d H:i:s");
+        $usuario->update();
+        Yii::app()->user->logout();
+	$this->redirect(Yii::app()->homeUrl."?r=site/login");
+	}
+}
+

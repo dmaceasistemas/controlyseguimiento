@@ -1,0 +1,11 @@
+<h2>Nuevo Eje Estrategico x Sede</h2>
+
+<div class="actionBar">
+<?php //echo CHtml::link('Lista de Ejes_Sedes',array('list')); ?>
+[<?php echo CHtml::link('Control Eje_Sede',array('admin')); ?>]
+</div>
+
+<?php echo $this->renderPartial('_form', array(
+	'model'=>$model,
+	'update'=>false,
+)); ?>

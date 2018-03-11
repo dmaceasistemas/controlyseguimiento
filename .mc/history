@@ -1,0 +1,20 @@
+
+[inp Guardar como ]
+0=Labores.php
+
+[input-2]
+0=/var/www/yii
+
+[input-1]
+0=/var/www/seguimiento/public_html/yii
+
+[Dir Hist New Left Panel]
+0=/var/www/seguimiento/public_html/public_html
+1=/var/www/seguimiento/public_html
+
+[Dir Hist New Right Panel]
+0=/var/www/html/seguimiento/protected/models
+1=/var/www/html/seguimiento/protected
+2=/var/www/html/seguimiento
+3=/var/www/html
+4=/var/www

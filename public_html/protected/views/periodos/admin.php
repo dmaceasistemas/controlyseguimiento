@@ -1,0 +1,36 @@
+<h2>Control de Periodos</h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Nuevo',array('create')); ?>]
+</div>
+
+<table class="dataGrid">
+  <thead>
+  <tr>
+    <th><?php echo $sort->link('id'); ?></th>
+    <th><?php echo $sort->link('dtm_fechadesde'); ?></th>
+    <th><?php echo $sort->link('dtm_fechahasta'); ?></th>
+    <th><?php echo $sort->link('str_observaciones'); ?></th>
+	<th>Acciones</th>
+  </tr>
+  </thead>
+  <tbody>
+<?php foreach($models as $n=>$model): ?>
+  <tr class="<?php echo $n%2?'even':'odd';?>">
+    <td><?php echo CHtml::link($model->id,array('show','id'=>$model->id)); ?></td>
+    <td><?php echo CHtml::encode($model->dtm_fechadesde); ?></td>
+    <td><?php echo CHtml::encode($model->dtm_fechahasta); ?></td>
+    <td><?php echo CHtml::encode($model->str_observaciones); ?></td>
+    <td>
+      <?php echo CHtml::link('Actualizar',array('update','id'=>$model->id)); ?>
+      <?php echo CHtml::linkButton('Eliminar',array(
+      	  'submit'=>'',
+      	  'params'=>array('command'=>'delete','id'=>$model->id),
+      	  'confirm'=>"Esta seguro que desea eliminar el item:   #{$model->id}?")); ?>
+	</td>
+  </tr>
+<?php endforeach; ?>
+  </tbody>
+</table>
+<br/>
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>

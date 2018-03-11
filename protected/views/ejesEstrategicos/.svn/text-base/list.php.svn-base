@@ -1,0 +1,22 @@
+<h2>EjesEstrategicos List</h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('New EjesEstrategicos',array('create')); ?>]
+[<?php echo CHtml::link('Manage EjesEstrategicos',array('admin')); ?>]
+</div>
+
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>
+
+<?php foreach($models as $n=>$model): ?>
+<div class="item">
+<?php echo CHtml::encode($model->getAttributeLabel('seq_ideje')); ?>:
+<?php echo CHtml::link($model->seq_ideje,array('show','id'=>$model->seq_ideje)); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('str_descripcioneje')); ?>:
+<?php echo CHtml::encode($model->str_descripcioneje); ?>
+<br/>
+
+</div>
+<?php endforeach; ?>
+<br/>
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>

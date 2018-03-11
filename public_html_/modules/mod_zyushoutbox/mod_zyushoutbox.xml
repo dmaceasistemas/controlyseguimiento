@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>ZyuShoutbox</name>
+	<author>Nova Zyura</author>
+	<creationDate>2008 May</creationDate>
+	<copyright>(C) Zyuras @Lembahweb Bandung Indonesia</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>zyuras@lembahweb.com</authorEmail>
+	<authorUrl>http://lembahweb.com</authorUrl>
+	<version>2.0.1</version>
+	<description>ZyuShoutbox performs an Ajax live chat called Shout Box</description>
+	<files>
+		<filename module="mod_zyushoutbox">mod_zyushoutbox.php</filename>
+		<filename module="mod_zyushoutbox">helper.php</filename>
+		<filename module="mod_zyushoutbox">index.html</filename>
+		<filename module="mod_zyushoutbox">tmpl/default.php</filename>
+		<filename module="mod_zyushoutbox">tmpl/index.html</filename>
+		<filename module="mod_zyushoutbox">js/shoutbox.js</filename>
+		<filename module="mod_zyushoutbox">js/smilie.js</filename>
+		<filename module="mod_zyushoutbox">css/shoutbox_def.css</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_zyushoutbox.ini</language>
+	</languages>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="messages_shown" type="text" default="10" label="First Messages Shown" description="Number of messages to shown for the first time." />
+		<param name="messages_del" type="text" default="35" label="Messages To Keep" description="Number of messages to be kept." />
+	</params>
+</install>

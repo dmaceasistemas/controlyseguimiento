@@ -1,0 +1,91 @@
+8
+
+dir
+5126
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected
+svn://172.16.0.250/argos
+
+
+
+2009-10-22T12:40:27.613267Z
+3951
+tchinchilla
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+incomplete
+
+extensions
+dir
+
+commands
+dir
+
+yiic.bat
+file
+3950
+
+
+
+2009-10-09T16:31:09.000000Z
+333aceddff8e519f680520eab6b16f30
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+runtime
+dir
+
+models
+dir
+
+yiic.php
+file
+3950
+
+
+
+2009-10-09T16:31:09.000000Z
+83ffb8f30bfb7bd2693ef4a8e8321738
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+config
+dir
+
+components
+dir
+
+controllers
+dir
+
+messages
+dir
+
+views
+dir
+
+yiic
+file
+3950
+
+
+
+2009-10-09T16:31:09.000000Z
+9afc4b726c95541c59b4cc53b0f045ea
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+has-props
+

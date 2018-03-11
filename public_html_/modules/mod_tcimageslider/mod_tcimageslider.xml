@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>TCImageSlider</name>
+	<author>Tobacamp-Dani Gunawan</author>
+	<creationDate>Ramadhan 1429</creationDate>
+	<copyright>Copyright (C) 2008 Tobacamp. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>tobacamp@gmail.com</authorEmail>
+	<authorUrl>www.tobacamp.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Displays sliding images based on default Joomla! banner component (com_banners)</description>
+	<files>
+		<filename module="mod_tcimageslider">mod_tcimageslider.php</filename>
+		<filename>js/tcimageslider.js</filename>
+		<filename>images/no_category.gif</filename>
+	</files>
+	<params>
+		<param name="catid" type="category" section="com_banner" default="" label="Category" description="Image Category (based on category in com_banners)" />
+		<param name="order" type="list" default="ordering" label="Order by" description="Order type">
+			<option value="ordering">Ordering</option>
+			<option value="date">Date</option>
+		</param>
+		<param name="sort" type="radio" default="ASC" label="Sort type" description="Sort type">
+			<option value="ASC">Ascending</option>
+			<option value="DESC">Descending</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="sliderwidth" type="text" default="300" label="Slider width" description="Specify the slider's width (in pixels)" />
+		<param name="sliderheight" type="text" default="150" label="Slider Height" description="Specify the slider's height (in pixels)" />
+		<param name="slidespeed" type="text" default="1" label="Speed" description="Specify the slider's slide speed (larger is faster 1-10)" />
+		<param name="bgcolor" type="text" default="EAEAEA" label="Background color" description="Configure background color. Leave it empty if you'd like to make it no color." />
+		<param name="imagegap" type="text" default="2" label="Image gap" description="Specify gap between each image (in space)" />
+		<param name="slideshowgap" type="text" default="5" label="Slideshow gap" description="Specify pixels gap between each slideshow rotation (in integer)" />
+	</params>
+</install>

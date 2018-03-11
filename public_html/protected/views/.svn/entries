@@ -1,0 +1,56 @@
+8
+
+dir
+3950
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected/views
+svn://172.16.0.250/argos
+
+
+
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+
+svn:special svn:externals svn:needs-lock
+
+layouts
+dir
+
+categorias
+dir
+
+productor
+dir
+
+ejesEstrategicos
+dir
+
+site
+dir
+
+periodos
+dir
+
+system
+dir
+
+servicios
+dir
+
+labores
+dir
+
+rangos
+dir
+
+ejesSedes
+dir
+
+lugar
+dir
+
+
+
+add
+

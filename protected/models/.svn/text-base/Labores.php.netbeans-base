@@ -1,0 +1,94 @@
+<?php
+
+class Labores extends CActiveRecord
+{
+	/**
+	 * The followings are the available columns in table 'tbl_labores':
+	 * @var integer $id
+	 * @var integer $id_servicio
+	 * @var integer $id_rubro
+	 * @var integer $id_sede
+	 * @var integer $id_tipoproductor
+	 * @var integer $id_rangohas
+	 * @var string $dbl_hasfisicas
+	 * @var string $dbl_haslabor
+	 * @var integer $int_prodatendidos
+	 * @var string $dtm_fecha
+	 * @var string $dbl_kg
+	 * @var integer $id_periodo
+	 * @var string $str_observaciones
+	 */
+
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @return CActiveRecord the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return 'tbl_labores';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		return array(
+			array('dbl_hasfisicas','length','max'=>12),
+			array('dbl_haslabor','length','max'=>12),
+			array('dbl_kg','length','max'=>12),
+			array('str_observaciones','length','max'=>50),
+			array('id_servicio, id_rubro, id_sede, id_tipoproductor, id_rangohas, int_prodatendidos, id_periodo', 'numerical', 'integerOnly'=>true),
+			array('dbl_hasfisicas, dbl_haslabor, dbl_kg, dbl_v_urbanorural, dbl_v_agricola, dbl_movimiento_tierras, dbl_deforestacion, dbl_limpiezacanales, dbl_horas_maquinaria', 'numerical'),
+                        array('id_servicio, dbl_hasfisicas, dbl_haslabor, dtm_fecha, dbl_kg, id_rubro, id_sede, id_tipoproductor, id_rangohas, int_prodatendidos, id_periodo, dbl_v_urbanorural, dbl_v_agricola, dbl_movimiento_tierras, dbl_deforestacion, dbl_limpiezacanales, dbl_horas_maquinaria','required'),
+                     
+                     );
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+		);
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'id' => 'Id',
+			'id_servicio' => 'Servicio ',
+			'id_rubro' => 'Rubro ',
+			'id_sede' => 'Sede ',
+			'id_tipoproductor' => 'Tipo de Productor ',
+			'id_rangohas' => 'Rango Hectareas ',
+			'dbl_hasfisicas' => 'Hectareas Fisicas ',
+			'dbl_haslabor' => 'Hectareas Labor: ',
+			'int_prodatendidos' => 'Productores Atendidos ',
+			'dtm_fecha' => 'Fecha ',
+			'dbl_kg' => 'Kilogramos',
+			'id_periodo' => 'Periodo ',
+			'str_observaciones' => 'Observaciones ',
+                        'dbl_v_urbanorural'=> 'Vialidad Urbana',
+                        'dbl_v_agricola'=> 'Vialidad Agricola',
+                        'dbl_movimiento_tierras'=> 'Movimiento de Tierras',
+                        'dbl_deforestacion' => 'Deforestacion',
+                        'dbl_limpiezacanales' => 'Limpieza de Canales',
+                        'dbl_horas_maquinaria' => 'Horas Maquinaria ',
+		);
+	}
+}

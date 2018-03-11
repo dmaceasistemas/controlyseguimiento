@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module">
+	<name>SBD Accordion Menu</name>
+	<author>Matthew Cooper</author>
+	<creationDate>January 2008</creationDate>
+	<copyright>(C) 2008 Simple By Design</copyright>
+	<license>Custom License http://www.simplebydesign.co.uk/legal/terms-and-conditions/general-software-licensing.html</license>
+	<authorEmail>info@simplebydesign.co.uk</authorEmail>
+	<authorUrl>www.simplebydesign.co.uk</authorUrl>
+	<version>0.8.8</version>
+	<description><![CDATA[Displays an alternate menu to Joomla's main menu module. Provides an accordion style menu, which 
+	can either be triggered on mouse over the menu or by clicking to expand. Only the first level is expandable, all
+	following levels are automatically expanded but indented.<br/>
+	<br/>
+	The menu is fully configurable by CSS, the menus default CSS file can be located in the following location:<br/>
+	<br/>
+	<joomla root>/modules/mod_sbdrollmenu/mod_sbd_rollmenu.css<br/>
+	<br/>
+	There are very few configurable options as the main control is via CSS and Javascript. The core javascript is 
+	using the Yahoo User Interface Library.<br/>
+	<br/>
+	If you have any questions regarding this script visit our forums: <a href="http://www.simplebydesign.co.uk/forums/19-sbd-accordion-menu/">SBD Accordion Menu Forums</a><br/>
+	<br/>
+	For the latest download check the following location: <a href="http://www.simplebydesign.co.uk/joomla/modules/sbd-accordian-menu.html">Latest Version</a><br/>
+	<br/>
+	We hope you find this module useful.<br/>
+	<br/>
+	Matthew Cooper<br/>
+	Simple By Design]]></description>
+	<files>
+		<filename module="mod_sbd_rollmenu">mod_sbd_rollmenu.php</filename>
+		<filename>mod_sbd_rollmenu.xml</filename>
+		<filename>mod_sbdrollmenu/mod_sbd_rollmenu.css</filename>
+		<filename>mod_sbdrollmenu/mod_sbd_rollmenu.js</filename>
+		<filename>mod_sbdrollmenu/animation_2.0.0-b3.js</filename>
+		<filename>mod_sbdrollmenu/dom_2.0.2-b3.js</filename>
+		<filename>mod_sbdrollmenu/event_2.0.0-b2.js</filename>
+		<filename>mod_sbdrollmenu/yahoo_2.0.0-b2.js</filename>
+		<filename>mod_sbdrollmenu/mod_sbd_roll_compressed.js</filename>
+	</files>
+		<params>
+		<param name="class_sfx" type="text" default="" label="Menu Class Suffix" description="A suffix to be applied to the css class of the menu items" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="menulevel_sfx" type="radio" default="0" label="Enable Menu ID CSS" description="Enable different CSS code to be used based on each top level menu id">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="level_sfx" type="radio" default="1" label="Enable Menu Level CSS" description="Enable different CSS code to be used based on the sub menu level">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="parentlevel" type="radio" default="1" label="Enable Parent Level CSS" description="Enable different CSS code to be used based on the parent (top) level menus">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="attemptvalidation" type="radio" default="0" label="XHTML Transitional" description="Attempt XHTML Transitional validation - requires the contents of the mod_sbd_rollmenu.css to be placed in the template css file.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>								
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="joomlaver" type="radio" default="0" label="Joomla Version" description="Set version of Joomla if auto has problems.">
+			<option value="0">Auto</option>
+			<option value="1">1.0</option>
+			<option value="2">1.5</option>
+		</param>								
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="hidemenunoscript" type="radio" default="0" label="Hide Menu" description="Use CSS to hide the menu when no javascript present.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="noscriptmsg" type="text" default="Menu Requires Javascript" label="No script Msg" description="Text to be displayed if javascript is not present." />								
+		<param name="@spacer" type="spacer" default="" label="" description="" />				
+		<param name="menutype" type="mos_menu" default="" label="Menu Name" description="The name of the menu (default is `mainmenu`)" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="time_delay" type="text" default="1500" label="Time Delay" description="Time delay before firing rollover javascript, can help with non firing of menu" />
+		<param name="menu_delay" type="text" default="10" label="Menu Delay" description="Menu delay before starting menu opening" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="full_active_id" type="radio" default="0" label="Full Active highlighting" description="Enable full active menu item highlighting, including for `Link - Component Item` and `Link - Url`, which can cause loss of XHTML compliance, if more than one item is active">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="use_mouseover" type="radio" default="1" label="Use Mouse Over" description="Use mouse overs to enable the Accordion menu to expand">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="top_linkclick" type="radio" default="1" label="Top Menu as Link" description="Make the top level a clickable link to content etc or to be placed under the heading">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="noextramenu" type="radio" default="1" label="Show Top Menu link" description="Show the top menu link again under the top menu">
+			<option value="0">Always</option>
+			<option value="1">Never</option>
+		</param>
+		<param name="openparentmenu" type="radio" default="1" label="Expand Top Menu" description="Expand top level menu when browsing through sub menu links">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>				
+		<param name="opensinglemenu" type="radio" default="1" label="Expand One Level Menu" description="Always expand a menu if there is only one top item.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>					
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="usecompressedjs" type="radio" default="1" label="Use Compressed Javascript" description="Use compressed Javascript to speed up page loading time, disable if your having problems">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>			
+		</params>
+</mosinstall>

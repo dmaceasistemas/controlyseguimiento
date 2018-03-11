@@ -1,0 +1,25 @@
+<h2>Listado de Eje Estrategico x Sede</h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Nuevo Eje_Sede',array('create')); ?>]
+[<?php echo CHtml::link('Control Ejes_Sedes',array('admin')); ?>]
+</div>
+
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>
+
+<?php foreach($models as $n=>$model): ?>
+<div class="item">
+<?php echo CHtml::encode($model->getAttributeLabel('seq_idejesede')); ?>:
+<?php echo CHtml::link($model->seq_idejesede,array('show','id'=>$model->seq_idejesede)); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('int_idsede')); ?>:
+<?php echo CHtml::encode($model->int_idsede); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('int_ideje')); ?>:
+<?php echo CHtml::encode($model->int_ideje); ?>
+<br/>
+
+</div>
+<?php endforeach; ?>
+<br/>
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>

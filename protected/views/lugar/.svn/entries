@@ -1,0 +1,51 @@
+8
+
+dir
+0
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected/views/lugar
+svn://172.16.0.250/argos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+show.php
+file
+
+
+
+add
+
+update.php
+file
+
+
+
+add
+
+_form.php
+file
+
+
+
+add
+
+create.php
+file
+
+
+
+add
+
+admin.php
+file
+
+
+
+add
+

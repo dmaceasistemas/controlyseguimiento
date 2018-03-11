@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Calendar Icon</name>
+	<author>Tomasz Dobrzy&#324;ski</author>
+	<creationDate>August 2008</creationDate>
+	<copyright>(C) 2008 Tomasz Dobrzyński</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>depresz@gmail.com</authorEmail>
+	<authorUrl>www.tomasz-dobrzynski.com</authorUrl>
+	<version>1.2.4</version>
+	<description>Thanks for choosing Calendar Icon. If your language is not fully supported, mail me: depresz@gmail.com</description>
+	<files>
+		<filename plugin="calendar_icon">calendar_icon.php</filename>
+		<filename plugin="calendar_icon">calendar_icon/box_milkway.css</filename>
+		<filename plugin="calendar_icon">calendar_icon/box_nature.css</filename>
+		<filename plugin="calendar_icon">calendar_icon/box_red_on_white.css</filename>
+		<filename plugin="calendar_icon">calendar_icon/con_classic.css</filename>
+		<filename plugin="calendar_icon">calendar_icon/con_minimal_black.css</filename>
+		<filename plugin="calendar_icon">calendar_icon/con_minimal_red.css</filename>
+		<filename plugin="calendar_icon">calendar_icon/con_digg.css</filename>
+		<filename plugin="calendar_icon">calendar_icon/con_pink.css</filename>
+		<filename plugin="calendar_icon">calendar_icon/con_red_fog.css</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_calendar_icon.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_content_calendar_icon.ini</language>
+		<language tag="pl-PL">language/pl-PL/pl-PL.plg_content_calendar_icon.ini</language>
+	</languages>
+	<params>
+		<param name="style" type="list" default="con_minimal_black.css" label="PARAM_STYLE" description="PARAM_STYLE_DESCR">
+			<option value="con_classic.css">Classic</option>
+			<option value="box_milkway.css">Milkway (Blue)</option>
+			<option value="box_nature.css">Nature (Green)</option>
+			<option value="box_red_on_white.css">Burnt cat (Red)</option>
+			<option value="con_minimal_black.css">Minimal (Black)</option>
+			<option value="con_minimal_red.css">Minimal (Red)</option>
+			<option value="con_digg.css">Small digg</option>
+			<option value="con_pink.css">100% Pink</option>
+			<option value="con_red_fog.css">Fog in pink</option>
+			<option value="box_user_style">User style [SMALL BOX]</option>
+			<option value="con_user_style">User style [CONTAINER]</option>
+		</param>
+		<param name="style_user" type="textarea" rows="8" cols="35" default="/* table */td.datetime {} /* SPACE BETWEEN CALENDAR ICON AND HEADER */td.spacer_right {padding-left: 1px;} /* DAY OF WEEK */td.datetime p.top {} /* DAY */td.datetime p.day {} /* MONTH */td.datetime p.mon {} /* YEAR */td.datetime p.year {}" label="PARAM_STYLE_USER" description="PARAM_STYLE_USER_DESCR" />
+
+		<param name="advanced_template" type="list" default="0" label="PARAM_ADVANCED_TEMPLATE" description="PARAM_ADVANCED_TEMPLATE_DESCR">
+			    <option value="1">YES</option>
+			    <option value="0">NO</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="displaying" type="list" default="1" label="PARAM_DISPLAYING" description="PARAM_DISPLAYING_DESCR">
+			<option value="0">FRONTPAGE</option>
+			<option value="1">FRONTPAGE_ART</option>
+			<option value="3">JUSTARTICLE</option>
+			<option value="4">ARTICLEBLOG</option>
+			<option value="2">EVERYWHERE</option>
+		</param>
+
+		<param name="showing" type="list" default="0" label="PARAM_WHATSHOW" description="PARAM_WHATSHOW_DESCR">
+			<option value="0">DATE_CREATION</option>
+			<option value="1">DATE_UPDATE</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="sections" type="text" size="20" default="" label="PARAM_SECTIONS" description="PARAM_SECTIONS_DESCR"/>
+
+		<param name="categories" type="text" size="20" default="" label="PARAM_CATEGORIES" description="PARAM_CATEGORIES_DESCR"/>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="articles" type="text" size="20" default="" label="PARAM_ARTICLES" description="PARAM_ARTICLES_DESCR"/>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="position" type="list" default="left" label="PARAM_POSITION" description="PARAM_POSITION_DESCR">
+			    <option value="left">LEFT</option>
+			    <option value="right">RIGHT</option>
+		</param>
+
+		<param name="orginal_date" type="list" default="0" label="PARAM_ORGINAL_DATE" description="PARAM_ORGINAL_DATE_DESCR">
+			    <option value="1">SHOW</option>
+			    <option value="0">HIDE</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="show_week_day" type="list" default="0" label="PARAM_WEEK_DAY" description="PARAM_WEEK_DAY_DESCR">
+		    	<option value="1">SHOW</option>
+		    	<option value="0">HIDE</option>
+		</param>
+	
+		<param name="show_day" type="list" default="1" label="PARAM_DAY" description="PARAM_DAY_DESCR">
+			<option value="1">SHOW</option>
+			<option value="0">HIDE</option>
+		</param>
+
+		<param name="show_month" type="list" default="1" label="PARAM_MONTH" description="PARAM_MONTH_DESCR">
+			<option value="1">SHOW</option>
+			<option value="0">HIDE</option>
+		</param>
+
+		<param name="show_year" type="list" default="0" label="PARAM_YEAR" description="PARAM_YEAR_DESCR">
+			<option value="1">SHOW</option>
+			<option value="0">HIDE</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+	</params>
+</install>

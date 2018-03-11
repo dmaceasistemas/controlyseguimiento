@@ -1,0 +1,22 @@
+<h2>TipoServicio List</h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Nuevo Tipo de Servicio',array('create')); ?>]
+[<?php echo CHtml::link('Control de Tipo de Servicio',array('admin')); ?>]
+</div>
+
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>
+
+<?php foreach($models as $n=>$model): ?>
+<div class="item">
+<?php echo CHtml::encode($model->getAttributeLabel('seq_idtiposervicio')); ?>:
+<?php echo CHtml::link($model->seq_idtiposervicio,array('show','id'=>$model->seq_idtiposervicio)); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('str_descriptiposervicio')); ?>:
+<?php echo CHtml::encode($model->str_descriptiposervicio); ?>
+<br/>
+
+</div>
+<?php endforeach; ?>
+<br/>
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>

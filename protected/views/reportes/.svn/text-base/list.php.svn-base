@@ -1,0 +1,25 @@
+<h2>Reportes List</h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('New Reportes',array('create')); ?>]
+[<?php echo CHtml::link('Manage Reportes',array('admin')); ?>]
+</div>
+
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>
+
+<?php foreach($models as $n=>$model): ?>
+<div class="item">
+<?php echo CHtml::encode($model->getAttributeLabel('id')); ?>:
+<?php echo CHtml::link($model->id,array('show','id'=>$model->id)); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('str_descripcion')); ?>:
+<?php echo CHtml::encode($model->str_descripcion); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('str_nombrereporte')); ?>:
+<?php echo CHtml::encode($model->str_nombrereporte); ?>
+<br/>
+
+</div>
+<?php endforeach; ?>
+<br/>
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>

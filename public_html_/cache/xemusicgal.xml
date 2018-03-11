@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mp3gallery>
+<mp3 categorie = 'Varios' titel = 'In My Place' info = ''>
+<details bild = 'http://localhost/cvapedrocamejo/components/com_xemusicgal/img_pictures/the sound.jpg' downloads = 'http://localhost/cvapedrocamejo/components/com_xemusicgal/mp3_files/Cold Play - In my place.mp3' link = ''><![CDATA[http://localhost/cvapedrocamejo/components/com_xemusicgal/mp3_files/Cold Play - In my place.mp3]]></details></mp3>
+<mp3 categorie = 'Varios' titel = 'The Scientist' info = ''>
+<details bild = 'http://localhost/cvapedrocamejo/components/com_xemusicgal/img_pictures/the sound.jpg' downloads = 'http://localhost/cvapedrocamejo/components/com_xemusicgal/mp3_files/Cold Play - The Scientist.mp3' link = ''><![CDATA[http://localhost/cvapedrocamejo/components/com_xemusicgal/mp3_files/Cold Play - The Scientist.mp3]]></details></mp3>
+<mp3 categorie = 'Varios' titel = 'Wherever you go' info = ''>
+<details bild = 'http://localhost/cvapedrocamejo/components/com_xemusicgal/img_pictures/no_se.jpg' downloads = 'http://localhost/cvapedrocamejo/components/com_xemusicgal/mp3_files/Where ever you go.mp3' link = ''><![CDATA[http://localhost/cvapedrocamejo/components/com_xemusicgal/mp3_files/Where ever you go.mp3]]></details></mp3>
+</mp3gallery>

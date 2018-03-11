@@ -1,0 +1,19 @@
+<h2>Detalle de Tipo de Servicio<?php echo $model->seq_idtiposervicio; ?></h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Lista de Tipo de Servicio',array('list')); ?>]
+[<?php echo CHtml::link('Nuevo Tipo de Servicio',array('create')); ?>]
+[<?php echo CHtml::link('Actualizar Tipo de Servicio',array('update','id'=>$model->seq_idtiposervicio)); ?>]
+[<?php echo CHtml::linkButton('Eliminar Tipo de Servicio',array('submit'=>array('delete','id'=>$model->seq_idtiposervicio),'confirm'=>'Are you sure?')); ?>
+]
+[<?php echo CHtml::link('Control de Tipo de Servicio',array('admin')); ?>]
+</div>
+
+<table class="dataGrid">
+<tr>
+	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('str_descriptiposervicio')); ?>
+</th>
+    <td><?php echo CHtml::encode($model->str_descriptiposervicio); ?>
+</td>
+</tr>
+</table>

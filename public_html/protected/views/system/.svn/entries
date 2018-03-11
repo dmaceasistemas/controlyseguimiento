@@ -1,0 +1,42 @@
+8
+
+dir
+3951
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected/views/system
+svn://172.16.0.250/argos
+
+
+
+2009-10-22T12:40:27.613267Z
+3951
+tchinchilla
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+Error400.php
+file
+3950
+
+
+
+2009-10-21T21:00:05.000000Z
+b71742bae00f7ea174c9af94d04a44d5
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+exception_.php
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

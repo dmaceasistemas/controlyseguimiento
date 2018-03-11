@@ -1,0 +1,43 @@
+8
+
+dir
+5126
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected/extensions/calendar
+svn://172.16.0.250/argos
+
+
+
+2010-02-14T13:04:09.628542Z
+4916
+tchinchilla
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9eea0101-f6a7-43ed-b6b7-af5f0e6e244f
+
+SCalendar.php
+file
+
+
+
+
+2010-03-11T20:53:04.000000Z
+a07dc3cf10a71e7988b4dd9e3da9cf7b
+2010-02-14T13:04:09.628542Z
+4916
+tchinchilla
+
+resources
+dir
+

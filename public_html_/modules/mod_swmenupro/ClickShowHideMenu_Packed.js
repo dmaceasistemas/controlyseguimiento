@@ -1,0 +1,12 @@
+/*
+ * DO NOT REMOVE THIS NOTICE
+ *
+ * PROJECT:   mygosuMenu
+ * VERSION:   1.3.3
+ * COPYRIGHT: (c) 2003,2004 Cezary Tomczak
+ * LINK:      http://gosu.pl/dhtml/mygosumenu.html
+ * LICENSE:   BSD (revised)
+ * Modified by Sean White to work with swMenuPro (http://www.swonline.biz)
+ */
+
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('b S(2,q){3.t=T;3.r=T;3.O=1f;3.1e=b(){5(!8.9(3.2)){1d("1c \'"+3.2+"\' 1b 1a 19 18 3 8. S 17 16 15");e}3.v(8.9(3.2).u,3.c,3.2);3.B()};3.v=b(6,c,2){14(h i=0;i<6.g;i++){5(6[i].13!=1){12}5(6[i].7){5("d"==6[i].7.R(0,4)){6[i].2=2+"-"+c.g;c[c.g]=o n();m(\'6[i].Q = b() { j.K("\'+6[i].2+\'"); }\');m(\'6[i].P = b() { j.J("\'+6[i].2+\'"); }\');m(\'6[i].11 = b() { j.I("\'+6[i].2+\'"); }\')}5("f"==6[i].7){2=2+"-"+(c.g-1);6[i].2=2+"-f";c=c[c.g-1]}5("10"==6[i].7.R(0,4)){6[i].2=2+"-"+c.g;c[c.g]=o n();m(\'6[i].Q = b() { j.G("\'+6[i].2+\'", "\'+6[i].7+\'"); }\');m(\'6[i].P = b() { j.F("\'+6[i].2+\'", "\'+6[i].7+\'"); }\')}}5(3.O&&6[i].N&&6[i].N=="A"){5(8.Z.M==6[i].M){6[i].7=(6[i].7?\' L\':\'L\')}}5(6[i].u){3.v(6[i].u,c,2)}}};3.K=b(2){5(!3.t)e;5(!8.9(2))e;8.9(2).7=(3.a==2?"d-l-k":"d-k")};3.J=b(2){5(!3.t)e;5(!8.9(2))e;8.9(2).7=(3.a==2?"d-l":"d")};3.I=b(2){5(!8.9(2)){e}h a=3.a;5(3.a){5(!8.9(2+"-f")){e}3.E();5(a==2){5(3.Y){8.9(a).7="d-k"}H{8.9(a).7="d"}}H{8.9(a).7="d"}}5(a!=2){3.p(2);h 7=8.9(2).7;5("d-k"==7){8.9(2).7="d-l-k"}5("d"==7){8.9(2).7="d-l"}}};3.G=b(2,7){5(!3.r)e;5(!8.9(2))e;8.9(2).7=7+"-k"};3.F=b(2,7){5(!3.r)e;5(!8.9(2))e;8.9(2).7=7};3.p=b(2){5(8.9(2+"-f")){8.9(2+"-f").D.C="X"}3.a=2?2:""};3.E=b(){5(8.9(3.a+"-f")){8.9(3.a+"-f").D.C="W";3.a=""}};3.B=b(){h a="";5(q){a=2+"-"+q}5(a){3.p(a);8.9(a).7="d-l"}};h j=3;3.2=2;3.c=o n();3.a=""}5(V z.y.x=="U"){z.y.x=b(){h s=3.w(/^\\s*/,"");e s.w(/\\s*$/,"")}}',62,78,'||id|this||if|nodes|className|document|getElementById|id_openbox|function|tree|box1|return|section|length|var||self|hover|open|eval|Array|new|show|act|box2Hover||box1Hover|childNodes|parse|replace|trim|prototype|String||load|display|style|hide|box2out|box2over|else|box1click|box1out|box1over|active|href|tagName|highlightActive|onmouseout|onmouseover|substr|ClickShowHideMenu|true|undefined|typeof|none|block|box1hover|location|box2|onclick|continue|nodeType|for|initialized|be|cannot|in|exist|not|does|Element|alert|init|false'.split('|'),0,{}))

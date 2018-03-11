@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<install type="component" version="1.5">
+	
+	<name>JoomCoverflow</name>
+	<creationDate>Oct. 2008</creationDate>
+	<author>Hacce Soluciones TIC</author>
+	<copyright>This component is released under the GNU/GPL License</copyright>
+	<authorEmail>hacce@hacce.com</authorEmail>
+	<authorUrl>http://hacce.com</authorUrl>
+	<version>1.0alpha</version>
+	<license>GNU/GPL</license>
+	<description>Coverflow para Joomla</description>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<files>
+		<filename>joomcoverflow.php</filename>
+		<filename>joomcoverflow.html.php</filename>
+		<filename>albuminfo.xml</filename>
+		<filename>index.html</filename>
+		<folder>scripts</folder>
+		<folder>images</folder>
+	</files>
+	
+	<installfile>install.joomcoverflow.php</installfile>
+	
+	<administration>
+		<menu img="js/ThemeOffice/component.png">JoomCoverflow</menu>
+		<files folder="admin">
+			<filename>admin.joomcoverflow.php</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>uninstall.mysql.utf8.sql</filename>
+			<filename>index.html</filename>
+			<folder>controllers</folder>
+			<folder>views</folder>
+			<folder>tables</folder>
+		</files>
+	</administration>
+
+</install>

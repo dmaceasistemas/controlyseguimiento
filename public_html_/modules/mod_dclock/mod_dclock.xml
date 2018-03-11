@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<mosinstall type="module">
+    <name>DigitalClock</name>
+    <creationDate>10/Feb/2007</creationDate>
+    <author>Webmaster-tips.net</author>
+    <copyright>Webmaster-tips.net</copyright>
+    <authorEmail>nenadt@gmail.com</authorEmail>
+    <authorUrl>http://webmaster-tips.net</authorUrl>
+    <version>1.0</version>
+    <description>DigitalClock | Module</description>
+     <files>
+         <filename module="mod_dclock">mod_dclock.php</filename>
+	 <filename>mod_dclock/dclock.swf</filename>
+  </files>
+    <params name="" description="">
+      <param name="width" type="text" default="165" label="width" description="The width of DigitalClock (Default 165)" />
+	  <param name="height" type="text" default="36" label="height" description="The height of DigitalClock (Default 36)" />
+	</params>
+</mosinstall>

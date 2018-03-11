@@ -1,0 +1,32 @@
+<h2>Detalle Categoria <?php echo $model->id; ?></h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Lista de Categorias',array('list')); ?>]
+[<?php echo CHtml::link('Nueva Categoria',array('create')); ?>]
+[<?php echo CHtml::link('Actualizar Categoria',array('update','id'=>$model->id)); ?>]
+[<?php echo CHtml::linkButton('Eliminar Categoria',array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure?')); ?>
+]
+[<?php echo CHtml::link('Control de Categorias',array('admin')); ?>]
+</div>
+
+<table class="dataGrid">
+<tr>
+	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('str_descripcion')); ?>
+</th>
+    <td><?php echo CHtml::encode($model->str_descripcion); ?>
+</td>
+</tr>
+<tr>
+<th class="label">
+<?php $criteria= new CDbCriteria;  ?>
+<?php $criteria->condition='seq_idtiposervicio=:id_tiposervicio';  ?>
+<?php $criteria->params=array(':id_tiposervicio'=>$model->int_idtiposervicio);  ?>
+<?php $tipServ=TipoServicio::model()->find($criteria);?>
+<?php //echo CHtml::encode($tipServ->str_descriptiposervicio); ?>
+
+<?php echo CHtml::encode($model->getAttributeLabel('int_idtiposervicio')); ?>
+</th>
+<td><?php echo CHtml::encode($tipServ->str_descriptiposervicio); ?>
+</td>
+</tr>
+</table>

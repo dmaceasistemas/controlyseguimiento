@@ -1,0 +1,12 @@
+<h2>Actualizar Categoria <?php echo $model->id; ?></h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Lista de Categorias',array('list')); ?>]
+[<?php echo CHtml::link('Nueva Categoria',array('create')); ?>]
+[<?php echo CHtml::link('Control de Categorias',array('admin')); ?>]
+</div>
+
+<?php echo $this->renderPartial('_form', array(
+	'model'=>$model,
+	'update'=>true,
+)); ?>

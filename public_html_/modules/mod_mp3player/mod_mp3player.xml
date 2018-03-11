@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Flash Mp3 Player</name>
+	<author>Daniel Gutierrez</author>
+	<creationDate>March 2008</creationDate>
+	<copyright>Copyright (C) 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>daniel@gutierrez.nu</authorEmail>
+	<authorUrl>www.gutierrez.nu</authorUrl>
+	<version>1.3.2</version>
+	<description>Flash Mp3 Player para Joomla 1.5.x Integración del Script de Jeroen Wijering. Encuentra los tutoriales y soporte en www.gutierrez.nu</description>
+	<files>
+		<filename module="mod_mp3player">mod_mp3player.php</filename>
+		<filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		  <filename>files/config.xml</filename>
+		  <filename>files/config1.xml</filename>
+		  <filename>files/config2.xml</filename>
+		  <filename>files/config3.xml</filename>
+		  <filename>files/config4.xml</filename>
+		  <filename>files/playlist.xml</filename>
+		  <filename>files/AC_RunActiveContent.js</filename>
+		  <filename>files/imagen.gif</filename>
+		  <filename>files/popup.php</filename>
+		  <filename>files/index.html</filename>
+		  <filename>files/mp3/cover.jpg</filename>
+		  <filename>files/mp3/homeland.mp3</filename>
+		  <filename>files/mp3/jazzalude.mp3</filename>
+		  <filename>files/mp3/mp3player.swf</filename>
+		  <filename>files/mp3/index.html</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />		
+		
+		<param name="width" type="text" default="300" label="Anchura" description="Anchura del reproductor" />
+		<param name="height" type="text" default="200" label="Altura" description="Altura del reproductor" />
+		<param name="playlist" type="text" default="playlist" label="Nombre de la Lista" description="Nombre de la Lista de Reproducción. Es importante considerar las mayúsculas y minúsculas." />
+		<param name="style" type="list" default="config" label="Estilo del Reproductor" description="Selecciona el Estilo de tu reproductor. También puedes personalizarlo">
+			<option value="config">Default</option>
+			<option value="config1">Autostart - Random</option>
+			<option value="config2">Autostart - No Random</option>
+			<option value="config3">No Autostart - Random</option>
+			<option value="config4">No Autostart - No Random</option>					
+	</param>
+	</params>
+	<params group="advanced">
+		<param name="@spacer" type="spacer" default="CONFIGURACIÓN POP UP" label="" description="" />
+		<param name="show" type="radio" default="1" label="Mostrar" description="Muestra el objeto que deseas en el módulo">
+			<option value="1">Reproductor</option>
+			<option value="2">imagen PopUp</option>
+			<option value="3">Ambos</option>
+		</param>		
+		<param name="bg_popup" type="text" default="000000" label="Fondo del Pop Up" description="Color del fondo de la ventana emergente donde se abrira el reproductor" />
+		<param name="image" type="text" default="imagen.gif" label="Imagen para lanzar el Pop Up" description="Ubicado en el directorio modules/mod_mp3player/files/" />
+	</params>	
+</install>

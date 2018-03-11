@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="plugin" group="content">
+    <name>Content - Slider</name>
+    <author>Ian MacLennan</author>
+    <creationDate>July 19, 2007</creationDate>
+    <copyright>(C) 2007 Ian MacLennan. All rights reserved.</copyright>
+    <license>GNU/GPL</license>
+    <authorEmail>ian.maclennan@help.joomla.org</authorEmail>
+    <version>1.0beta</version>
+    <description>Used to add hidden text into an article that will appear when the title is clicked on.</description>
+    <files>
+        <filename plugin="slider">slider.php</filename>
+		<filename>README.php</filename>
+    </files>
+	<params>
+		<param name="csspath" type="text" label="CSS File Path" description="Path to the CSS file for styling the box.  Relative to the Joomla! base install" />
+	</params>
+</install>

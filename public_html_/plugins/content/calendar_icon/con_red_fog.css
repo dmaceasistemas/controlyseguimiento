@@ -1,0 +1,69 @@
+td.datetime {
+border-right: 1px dotted pink;
+
+padding-right: 0px;
+padding-top: 2px;
+padding-bottom:0px;
+margin-bottom:0px;
+margin-top: 0px;
+vertical-align:top;
+}
+
+/* SPACE BETWEEN CALENDAR ICON AND HEADER (TITLE AND AUTHOR) */
+td.spacer_right {
+padding: 0px 0px 0px 4px;
+}
+
+/* DAY OF WEEK */
+td.datetime p.top {
+font:0.8em/100% Verdana,Geneva,Arial,Helvetica,sans-serif;
+letter-spacing:0.2em;
+text-transform:uppercase;
+text-align: center;
+color: pink;
+
+margin-top: 0px;
+margin-bottom: 0px;
+
+padding-top: 3px;
+padding-bottom: 0px;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+/* DAY */
+td.datetime p.day {
+font:bold 1.6em/100% Verdana,Geneva,Arial,Helvetica,sans-serif;
+text-align: center;
+color: pink;
+
+padding-left: 3px;
+padding-right: 3px;
+margin-top: 1px;
+margin-bottom: 0px;
+}
+
+/* MONTH */
+td.datetime p.mon {
+font:bold 1.0em/100% Verdana,Geneva,Arial,Helvetica,sans-serif;
+text-transform:uppercase; 
+text-align: center;
+color: pink;
+
+padding-left: 3px;
+padding-right: 3px;
+margin-top: 1px;
+margin-bottom: 0px;
+}
+
+/* YEAR*/
+td.datetime p.year {
+font:0.7em/100% Verdana,Geneva,Arial,Helvetica,sans-serif;
+letter-spacing:0.15em;
+text-transform:uppercase; 
+text-align: center;
+color: pink;
+
+margin-top: 1px;
+margin-bottom: 0px;
+}

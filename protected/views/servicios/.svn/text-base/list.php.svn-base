@@ -1,0 +1,33 @@
+<h2>Lista de Servicios</h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Nuevo Servicio',array('create')); ?>]
+[<?php echo CHtml::link('Control de Servicios',array('admin')); ?>]
+</div>
+
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>
+
+<?php foreach($models as $n=>$model): ?>
+<div class="item">
+<?php echo CHtml::encode($model->getAttributeLabel('id')); ?>:
+<?php echo CHtml::link($model->id,array('show','id'=>$model->id)); ?>
+<br/>
+<?php $criteria= new CDbCriteria;  ?>
+<?php $criteria->condition='id=:id_servicio';  ?>
+<?php $criteria->params=array(':id_servicio'=>$model->id_categoria);  ?>
+<?php $serv=Categorias::model()->find($criteria);?>
+<?php echo CHtml::encode($model->getAttributeLabel('id_categoria')); ?>:
+<?php echo CHtml::encode($serv->str_descripcion); ?>
+
+
+<?php /*echo CHtml::encode($model->getAttributeLabel('id_categoria')); ?>:
+<?php echo CHtml::encode($model->id_categoria);*/ ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('str_descripcion')); ?>:
+<?php echo CHtml::encode($model->str_descripcion); ?>
+<br/>
+
+</div>
+<?php endforeach; ?>
+<br/>
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>

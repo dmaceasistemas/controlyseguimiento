@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="font_color" default="#135cae" size="10" type="text" label="Font Color" description="Font Color Desc" />
+		<param name="background_color" default="#fcfcfc" size="10" type="text" label="Background Color" description="Background Color DESC" />
+		<param name="background_color_hover" default="#f5f5f5" size="10" type="text" label="Background Color Hover" description="Background Color Hover DESC" />
+		<param name="image_background_color" default="#f5f5f5" size="10" type="text" label="Image Background Color" description="Image Background Color DESC" />
+
+		<param name="image_background_shadow" type="list" default="1" label="Image Background Shadow" description="Image Background Shadow DESC">
+				<option value="none">None</option>
+				<option value="shadow1">shadow1</option>
+				<option value="shadow2">shadow2</option>
+				<option value="shadow3">shadow3</option>
+			</param>
+		
+		
+		<param name="border_color" default="#e8e8e8" size="10" type="text" label="Border Color" description="Border Color DESC" />
+		<param name="border_color_hover" default="#135cae" size="10" type="text" label="Border Color Hover" description="Border Color Hover DESC" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="display_name" type="radio" default="1" label="Display Name" description="Display/Hide Name DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+		<param name="display_icon_detail" type="radio" default="1" label="Display Detail Icon" description="Display/Hide Detail Icon DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="display_icon_download" type="radio" default="1" label="Display Download Icon" description="Display/Hide Download Icon DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="display_icon_folder" type="radio" default="0" label="Display Folder Icon" description="Display/Hide Folder Icon DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="display_icon_random_image" type="radio" default="0" label="Display Icon Random Image" description="Display Icon Random Image DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="font_size_name" default="12" size="4" type="text" label="Font Size Name" description="Font Size Name DESC" />
+		<param name="char_length_name" default="11" size="4" type="text" label="Char Length Name" description="Char Length Name DESC" />
+		<param name="category_box_space" default="0" size="4" type="text" label="Category Box Space" description="Category Box Space DESC" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="detail_window" type="list" default="0" label="Detail Window" description="Detail Window Desc">
+			<option value="0">Modal Popup Box</option>
+			<option value="1">Standard Popup Window</option>
+		</param>
+		
+		<param name="detail_window_background_color" default="#ffffff" size="10" type="text" label="Detail Window Background Color" description="Detail Window Background Color DESC" />
+		
+		<param name="modal_box_overlay_color" default="#000000" size="10" type="text" label="Modal Box Overlay Color" description="Modal Box Overlay Color DESC" />
+		
+		<param name="modal_box_overlay_opacity" default="0.7" size="10" type="list" label="Modal Box Overlay Opacity" description="Modal Box Overlay Opacity DESC" >
+		<option value="0">0 %</option>
+		<option value="0.1">10 %</option>
+		<option value="0.2">20 %</option>
+		<option value="0.3">30 %</option>
+		<option value="0.4">40 %</option>
+		<option value="0.5">50 %</option>
+		<option value="0.6">60 %</option>
+		<option value="0.7">70 %</option>
+		<option value="0.8">80 %</option>
+		<option value="0.9">90 %</option>
+		<option value="1">100 %</option>
+		
+		</param>
+		
+		<param name="modal_box_border_color" default="#000000" size="10" type="text" label="Modal Box Border Color" description="Modal Box Border Color DESC" />
+		
+		<param name="modal_box_border_width" default="10" size="10" type="text" label="Modal Box Border Width" description="Modal Box Border Width DESC" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="display_description_detail" type="radio" default="0" label="Display Description Detail" description="Display/Hide Description Detail DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+		<param name="font_size_desc" default="11" size="4" type="text" label="Font Size Desc" description="Font Size Desc DESC" />
+		<param name="font_color_desc" default="#333333" size="10" type="text" label="Font Color Desc" description="Font Color Desc DESC" />
+		<param name="description_detail_height" default="16" size="4" type="text" label="Description Detail Height" description="Description Detail Height DESC" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="categories_columns" default="1" size="10" type="text" label="Number of Columns" description="Number of Columns DESC" />
+		
+		<param name="display_image_categories" type="radio" default="1" label="Display Image Categories" description="Display Image Categories DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+		</param>
+		<param name="image_categories_size" type="list" default="0" label="Image Categories Size" description="Image Categories Size DESC">
+			<option value="0">Small</option>
+			<option value="1">Medium</option>
+			<option value="2">Small Folder Icon</option>
+			<option value="3">Medium Folder Icon</option>
+			<option value="4">Small with Shadow</option>
+			<option value="5">Medium with Shadow</option>
+			<option value="6">Small Folder Icon with Shadow</option>
+			<option value="7">Medium Folder Icon with Shadow</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="display_subcategories" type="radio" default="1" label="Display Subcategories" description="Display Subcategories DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="display_empty_categories" type="radio" default="0" label="Display Empty Categories" description="Display Empty Categories DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="display_subcat_page" type="radio" default="0" label="Display Subcategories on Page" description="Display Subcategories on Page DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="hide_categories" type="textarea" rows="2" cols="26" default="" label="Hide Categories" description="Hide Categories DESC" />
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="slideshow_delay" type="radio" default="3000" label="Slideshow Delay" description="Slideshow Delay DESC">
+			<option value="1000">1 sec</option>
+			<option value="2000">2 sec</option>
+			<option value="3000">3 sec</option>
+			<option value="5000">5 sec</option>
+			<option value="10000">10 sec</option>
+		</param>
+		
+		<param name="slideshow_pause" type="radio" default="0" label="Slideshow Pause" description="Slideshow Pause DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="slideshow_random" type="radio" default="0" label="Slideshow Random" description="Slideshow Random DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>	
+		
+		
+		<param name="detail_buttons" type="radio" default="1" label="Display Buttons" description="Display Buttons DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	
+	<param name="pagination_thumbnail_creation" type="radio" default="0" label="Pagination Thumbnail Creation" description="Pagination Thumbnail Creation DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="clean_thumbnails" type="radio" default="0" label="Clean Thumbnails" description="Clean Thumbnails DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="enable_thumb_creation" type="radio" default="1" label="Enable Thumbnails Creation" description="Enable Thumbnails Creation DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	
+	<param name="large_image_width" default="640" size="4" type="text" label="Large Image Width" description="Large Image Width DESC" />
+	<param name="large_image_height" default="480" size="4" type="text" label="Large Image Height" description="Large Image Height DESC" />
+	
+	<param name="medium_image_width" default="100" size="4" type="text" label="Medium Image Width" description="Medium Image Width DESC" />
+	<param name="medium_image_height" default="100" size="4" type="text" label="Medium Image Height" description="Medium Image Height DESC" />
+	
+	<param name="small_image_width" default="50" size="4" type="text" label="Small Image Width" description="Small Image Width DESC" />
+	<param name="small_image_height" default="50" size="4" type="text" label="Small Image Height" description="Small Image Height DESC" />
+	
+	<param name="admin_modal_box_width" default="680" size="4" type="text" label="Admin Modal Box Width" description="Admin Modal Box Width DESC" />
+	<param name="admin_modal_box_height" default="520" size="4" type="text" label="Admin Modal Box Height" description="Admin Modal Box Height DESC" />
+	
+	<param name="front_modal_box_width" default="680" size="4" type="text" label="Front Modal Box Width" description="Front Modal Box Width DESC" />
+	<param name="front_modal_box_height" default="560" size="4" type="text" label="Front Modal Box Height" description="Front Modal Box Height DESC" />
+	
+	<param name="front_popup_window_width" default="680" size="4" type="text" label="Front Popup Window Width" description="Front Popup Window Width DESC" />
+	<param name="front_popup_window_height" default="560" size="4" type="text" label="Front Popup Window Height" description="Front Popup Window Height DESC" />
+	
+	<param name="icon_format" type="radio" default="gif" label="Icon Format" description="Icon Format DESC">
+			<option value="gif">gif</option>
+			<option value="png">png</option>
+			<option value="jpg">jpg</option>
+		</param>
+	
+
+	</params>
+</config>

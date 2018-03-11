@@ -1,0 +1,9 @@
+<?php
+class MenuPrincipal extends CWidget{
+    public function run() {
+        $this->render('menuPrincipal');
+    }
+
+}
+
+?>

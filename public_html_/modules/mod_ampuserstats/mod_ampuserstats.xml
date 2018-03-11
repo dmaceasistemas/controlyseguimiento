@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Amplify User Stats</name>
+	<author>Joommasters</author>
+	<copyright>Joommasters.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joommasters@gmail.com</authorEmail>
+	<authorUrl>www.joommasters.com</authorUrl>
+	<version>1.0</version>
+	<description>The Amplify user stats module (modified from the Jms User Statistic module) displays your Joomla! user statistics. For support and other Joomla! goodies, please visit http://www.projectamplify.com. </description>
+	<files>
+		<filename module="mod_ampuserstats">mod_ampuserstats.php</filename>
+		<filename module="mod_ampuserstats">helper.php</filename>
+		<filename module="mod_ampuserstats">index.html</filename>
+		<filename module="mod_ampuserstats">tmpl/default.php</filename>
+		<filename module="mod_ampuserstats">tmpl/index.html</filename>
+		<filename module="mod_ampuserstats">tmpl/stylesheet.css</filename>
+	</files>
+	<params>
+	<param name="latest_member" type="radio" default="1" label="Latest Member" description="Show/Hide Latest Member name">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+	</param>
+	<param name="latest_member_label" type="text" default="Latest Member" label="Latest Member Text" description="Enter the text you would like to appear before the Latest Member statistic." />
+	
+	<param name="total_member" type="radio" default="1" label="Total Membership" description="Show/Hide Total Member">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+	</param>
+	<param name="total_member_label" type="text" default="Total Members" label="Total Member Text" description="Enter the text you would like to appear before the Total Member statistic." />
+	
+	<param name="number_member_online" type="radio" default="1" label="Members Online" description="Show/Hide Number Member Online">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+	</param>
+	<param name="number_member_online_label" type="text" default="Members Online" label="Members Online Text" description="Enter the text you would like to appear before the Members Online statistic." />
+	
+	<param name="number_register_today" type="radio" default="1" label="Registered Today" description="Show/Hide Number Register Today">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+	</param>
+	<param name="number_register_today_label" type="text" default="Registered Today" label="Registered Today Text" description="Enter the text you would like to appear before the Members Registered Today statistic." />
+	
+	<param name="number_register_thisweek" type="radio" default="1" label="Registered This Week" description="Show/Hide Number Register This Week">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+	</param>
+	<param name="number_register_thisweek_label" type="text" default="New This Week" label="Registered This Week Text" description="Enter the text you would like to appear before the Members Registered This Week statistic." />
+	
+	<param name="number_register_this_month" type="radio" default="1" label="Registered This Month" description="Show/Hide Number Register This Month">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+	</param>
+	<param name="number_register_thismonth_label" type="text" default="New This Month" label="Registered This Month Text" description="Enter the text you would like to appear before the Members Registered This Month statistic." />
+	
+	<param name="amplify_credit" type="radio" default="1" label="Non-Visable Author Credit" description="Publish a hidden link to the Author of this free module (Link will not show on your site pages)">
+			<option value="0">Off</option>
+			<option value="1">On</option>
+	</param>
+	
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module which allows individual module styling." />
+	</params>
+</install>

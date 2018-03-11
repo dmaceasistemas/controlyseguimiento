@@ -1,0 +1,16 @@
+8
+
+dir
+3951
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected/commands/shell
+svn://172.16.0.250/argos
+
+
+
+2009-10-22T12:40:27.613267Z
+3951
+tchinchilla
+has-props
+
+svn:special svn:externals svn:needs-lock
+

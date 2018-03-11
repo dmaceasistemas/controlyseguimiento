@@ -1,0 +1,40 @@
+8
+
+dir
+5126
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected/runtime
+svn://172.16.0.250/argos
+
+
+
+2009-10-22T12:40:27.613267Z
+3951
+tchinchilla
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9eea0101-f6a7-43ed-b6b7-af5f0e6e244f
+
+application.log
+file
+3950
+
+
+
+2009-10-21T19:08:07.000000Z
+f7ba7d3263aa82ba40f5cef976447c78
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="4.5.1">
+    <name>News Master</name>
+    <creationDate>Mar. 2007</creationDate>
+    <author>Ray Gilman</author>
+    <copyright>This module is released as freeware, under the CCL! Some rights reserved!</copyright>
+    <authorEmail>support@mambotoys.com</authorEmail>
+    <authorUrl>www.mambotoys.com</authorUrl>
+    <version>1.3.1</version>
+    <description>News Master Scrolls your content/section items. Last modified January 2007 by Ray Gilman.</description>
+     <files>
+         <filename module="mod_nms_pro">mod_nms_pro.php</filename>
+     </files>
+
+    <params>
+
+      <param name="@spacer" type="spacer" default="" label="CONTENT SELECTION CONTROL" description="" />
+      <param name="NMSCatSect" type="radio" default="cat" label="Scroll Category or Section?" description="[NMSCatSect] " >
+        <option value="cat">[Categories - default]</option>
+        <option value="sect">Sections</option> 
+      </param>
+
+      <param name="NMSSection" type="mos_section" default="1" label="Section to Scroll" description="[NMSSection]" />
+
+      <param name="NMSCategory" type="mos_category" default="1" label="Category to Scroll" description="[NMSCategory]" />
+
+      <param name="NMSUseStatic" type="radio" default="no" label="Use Static or Cats/Sects Content?" description="[NMSUseStatic] " >
+        <option value="no">[Cats/Sects - default]</option>
+        <option value="yes">Static</option> 
+      </param>
+
+      <param name="NMSHowSearch" type="radio" default="random" label="Method of Searching" description="[NMSHowSearch] " >
+        <option value="random">[Random - default]</option>
+        <option value="pop">Popular</option> 
+        <option value="new">Created</option>
+        <option value="ordered">Ordered</option>
+      </param>
+
+      <param name="NMSHowSort" type="radio" default="asc" label="Method of Sorting" description="[NMSHowSort] " >
+        <option value="asc">[Ascending - default]</option>
+        <option value="desc">Descending</option> 
+      </param>
+
+      <param name="NMSItemCount" type="list" default="3" label="Number of Items" description="[NMSItemCount] The number of items to display." >
+        <option value="0">All</option>
+        <option value="1">1 item</option> 
+        <option value="2">2 items</option> 
+        <option value="3">[3 items - default]</option> 
+        <option value="4">4 items</option> 
+        <option value="5">5 items</option>
+        <option value="6">6 items</option>  
+        <option value="7">7 items</option> 
+        <option value="8">8 items</option> 
+        <option value="9">9 items</option> 
+        <option value="10">10 items</option> 
+        <option value="11">11 items</option> 
+        <option value="12">12 items</option> 
+        <option value="13">13 items</option> 
+        <option value="14">14 items</option> 
+        <option value="15">15 items</option> 
+        <option value="20">20 items</option> 
+        <option value="25">25 items</option> 
+        <option value="30">30 items</option> 
+        <option value="35">35 items</option> 
+        <option value="40">40 items</option> 
+        <option value="45">45 items</option> 
+        <option value="50">50 items</option> 
+        <option value="60">60 items</option> 
+        <option value="70">70 items</option> 
+        <option value="80">80 items</option> 
+        <option value="90">90 items</option> 
+        <option value="100">100 items</option> 
+      </param>
+
+      <param name="NMSItems" type="text" default="" size="30" label="Select Items" description="[NMSItems] The id of an item or multiple items separated by commas. ex: 3,56,7,34,90  " />
+
+      <param name="@spacer" type="spacer" default="" label="TITLE CSS CONTROL" description="" />
+      <param name="NMSShowTitles" type="radio" default="1" label="Show Titles?" description="[NMSShowTitles] Controls the titles display. Yes, display titles. No, doesn't display titles." >
+        <option value="0">No</option>
+        <option value="1">[Yes - default]</option> 
+      </param> 
+
+      <param name="NMSCSSTitle_Color" type="text" default="" size="30" label="Title Color" description="[NMSCSSTitle_Color]  Enter a hex value ( e.g., #000000 ) or IE color word ( e.g., Black )" />
+
+      <param name="NMSCSSTitle_Weight" type="list" default="600" label="Title Weight" description="[NMSCSSTitle_Weight] The character strength of the title." >
+        <option value="none">No Modification</option>
+        <option value="100">Lightest</option>
+        <option value="200">Lighter</option>
+        <option value="300">Light</option> 
+        <option value="400">Normal</option> 
+        <option value="500">Normal Bold</option> 
+        <option value="600">[Normal Bolder - default]</option> 
+        <option value="700">Bold</option> 
+        <option value="800">Bolder</option> 
+        <option value="900">Boldest</option> 
+      </param>
+
+      <param name="NMSCSSTitle_Size" type="list" default="9.5pt" label="Title Size" description="[NMSCSSTitle_Size] The character size of the title." >
+        <option value="none">No Modification</option>
+        <option value="7pt">7pt</option>
+        <option value="7.5pt">7.5pt</option>
+        <option value="8pt">8pt</option> 
+        <option value="8.5pt">8.5pt</option> 
+        <option value="9pt">9pt</option> 
+        <option value="9.5pt">[9.5pt - default]</option> 
+        <option value="10pt">10pt</option> 
+        <option value="10pt">10.5pt</option> 
+        <option value="11pt">11pt</option> 
+        <option value="11.5pt">11.5pt</option> 
+        <option value="12pt">12pt</option> 
+        <option value="12.5pt">12.5pt</option> 
+        <option value="13pt">13pt</option> 
+        <option value="13.5pt">13.5pt</option> 
+        <option value="14pt">14pt</option> 
+        <option value="14.5pt">14.5pt</option> 
+      </param>
+
+      <param name="NMSCSSTitle_Style" type="list" default="none" label="Title Style" description="[NMSCSSTitle_Style] The character style of the title." >
+        <option value="none">[No Modification - default]</option>
+        <option value="italic">Italic</option>
+        <option value="oblique">Oblique</option>
+      </param>
+      <param name="@spacer" type="spacer" default="" label="DATE CSS CONTROL" description="" />
+      <param name="NMSShowDate" type="radio" default="1" label="Show Date?" description="[NMSShowDate] Controls the Date display. Yes, display date of an article. No, hide it." >
+        <option value="0">[No - default]</option>
+        <option value="1">Yes</option> 
+      </param> 
+      <param name="NMSShowDate_ClassOrCSS" type="radio" default="1" label="Use Class or CSS?" description="[NMSShowDate_ClassOrCSS] Controls the Date css. CSS uses the options below and Class uses Joomla's CSS class for the date." >
+        <option value="0">CSS</option>
+        <option value="1">[Class - default]</option> 
+      </param> 
+      <param name="NMSCSSDate_Color" type="text" default="" size="30" label="Date Color" description="[NMSCSSDate_Color]  Enter a hex value ( e.g., #000000 ) or IE color word ( e.g., Black )" />
+
+      <param name="NMSCSSDate_Weight" type="list" default="400" label="Date Weight" description="[NMSCSSDate_Weight] The character strength of the date." >
+        <option value="none">No Modification</option>
+        <option value="100">Lightest</option>
+        <option value="200">Lighter</option>
+        <option value="300">Light</option> 
+        <option value="400">[Normal - default]</option> 
+        <option value="500">Normal Bold</option> 
+        <option value="600">Normal Bolder</option> 
+        <option value="700">Bold</option> 
+        <option value="800">Bolder</option> 
+        <option value="900">Boldest</option> 
+      </param>
+
+      <param name="NMSCSSDate_Size" type="list" default="8pt" label="Date Size" description="[NMSCSSDate_Size] The character size of the date." >
+        <option value="none">No Modification</option>
+        <option value="7pt">7pt</option>
+        <option value="7.5pt">7.5pt</option>
+        <option value="8pt">[8pt - default]</option> 
+        <option value="8.5pt">8.5pt</option> 
+        <option value="9pt">9pt</option> 
+        <option value="9.5pt">9.5pt</option> 
+        <option value="10pt">10pt</option> 
+        <option value="10pt">10.5pt</option> 
+        <option value="11pt">11pt</option> 
+        <option value="11.5pt">11.5pt</option> 
+        <option value="12pt">12pt</option> 
+        <option value="12.5pt">12.5pt</option> 
+        <option value="13pt">13pt</option> 
+        <option value="13.5pt">13.5pt</option> 
+        <option value="14pt">14pt</option> 
+        <option value="14.5pt">14.5pt</option> 
+      </param>
+
+      <param name="NMSCSSDate_Style" type="list" default="none" label="Date Style" description="[NMSCSSDate_Style] The character style of the date." >
+        <option value="none">[No Modification - default]</option>
+        <option value="italic">Italic</option>
+        <option value="oblique">Oblique</option>
+      </param>
+
+      <param name="@spacer" type="spacer" default="" label="NMS LINK CONTROL" description="" />
+      <param name="NMSUseDetailsLink" type="radio" default="1" label="Show Details Link?" description="[NMSUseDetailsLink] Controls the Details Link display. Yes, display a details link to an article. No, hide details link." >
+        <option value="0">No</option>
+        <option value="1">[Yes - default]</option> 
+      </param> 
+
+      <param name="NMSUseLinkedTitles" type="radio" default="1" label="Use Linked Titles?" description="[NMSUseLinkedTitles] Controls the way titles are displayed. Yes, displays as text and hyperlink to article. No, displays as text only." >
+        <option value="0">No</option>
+        <option value="1">[Yes - default]</option> 
+      </param> 
+
+      <param name="NMSUseMouseOverLink" type="radio" default="0" label="Use MouseOver Links?" description="[NMSUseMouseOverLink] This is a cool feature, but only works in IE family browsers." >
+        <option value="0">[No - default]</option>
+        <option value="1">Yes</option>
+      </param>
+
+      <param name="NMSShowCreatorLink" type="radio" default="1" label="Show Return Link?" description="[NMSShowCreatorLink] Show a return link to the author of this module?" >
+        <option value="1">[Yes - default]</option>
+        <option value="0">No</option> 
+      </param>
+
+      <param name="@spacer" type="spacer" default="" label="NMS TITLE CONTROL" description="" />
+      <param name="NMSAuthorTitle" type="list" default="Anonymous" label="Author Alias Text" description="[NMSAuthorTitle] The author alias to display when there is no default Author Alias defined." >
+        <option value="Anonymous">[Anonymous - default]</option>
+        <option value="Web Master">Web Master</option>
+        <option value="Nobody">Nobody</option> 
+        <option value="Administrator">Administrator</option> 
+        <option value="Manager">Manager</option> 
+        <option value="Publisher">Publisher</option> 
+        <option value="Editor">Editor</option> 
+        <option value="Author">Author</option> 
+      </param>
+
+      <param name="NMSDetailsText" type="list" default="Details" label="Details Link Text" description="[NMSDetailsText] The title text of the details/read more links at the end of each item." >
+        <option value="Details">[Details - default]</option>
+        <option value="View details">View details</option>
+        <option value="More details">More details</option>
+        <option value="More">More</option> 
+        <option value="More information">More information</option> 
+        <option value="More info">More info</option>
+        <option value="Read more">Read more</option>
+        <option value="Read full article">Read full article</option>
+        <option value="Full article">Full article</option>
+        <option value="Full story">Full story</option> 
+        <option value="Read full story">Read full story</option> 
+        <option value="Click for details">Click for details</option>   
+        <option value="Click for more">Click for more</option>     
+      </param>
+
+      <param name="@spacer" type="spacer" default="" label="NMS APPEARANCE CONTROL" description="" />
+      <param name="NMSHeight" type="list" default="170px" label="Height" description="[NMSHeight] Adjusts the scroll height." >
+        <option value="10px">10 px</option>
+        <option value="11px">11 px</option>
+        <option value="12px">12 px</option>
+        <option value="13px">13 px</option>
+        <option value="14px">14 px</option>
+        <option value="15px">15 px</option>
+        <option value="16px">16 px</option>
+        <option value="17px">17 px</option>
+        <option value="18px">18 px</option>
+        <option value="19px">19 px</option>
+        <option value="20px">20 px</option>
+        <option value="21px">21 px</option>
+        <option value="22px">22 px</option>
+        <option value="23px">23 px</option>
+        <option value="24px">24 px</option>
+        <option value="25px">25 px</option>
+        <option value="30px">30 px</option>
+        <option value="33px">33 px</option>
+        <option value="35px">35 px</option>
+        <option value="40px">40 px</option>
+        <option value="45px">45 px</option>
+        <option value="50px">50 px</option>
+        <option value="55px">55 px</option>
+        <option value="60px">60 px</option>
+        <option value="65px">65 px</option>
+        <option value="70px">70 px</option>
+        <option value="75px">75 px</option>
+        <option value="80px">80 px</option>
+        <option value="85px">85 px</option>
+        <option value="90px">90 px</option>
+        <option value="95px">95 px</option>
+        <option value="100px">100 px</option>
+        <option value="105px">105 px</option>
+        <option value="110px">110 px</option>
+        <option value="111px">111 px</option>
+        <option value="112px">112 px</option>
+        <option value="113px">113 px</option>
+        <option value="114px">114 px</option>
+        <option value="115px">115 px</option>
+        <option value="116px">116 px</option>
+        <option value="117px">117 px</option>
+        <option value="118px">118 px</option>
+        <option value="119px">119 px</option>
+        <option value="120px">120 px</option>
+        <option value="121px">121 px</option>
+        <option value="122px">122 px</option>
+        <option value="123px">123 px</option>
+        <option value="124px">124 px</option>
+        <option value="125px">125 px</option>
+        <option value="126px">126 px</option>
+        <option value="127px">127 px</option>
+        <option value="128px">128 px</option>
+        <option value="129px">129 px</option>
+        <option value="130px">130 px</option>
+        <option value="131px">131 px</option>
+        <option value="132px">132 px</option>
+        <option value="133px">133 px</option>
+        <option value="134px">134 px</option>
+        <option value="135px">135 px</option>
+        <option value="136px">136 px</option>
+        <option value="137px">137 px</option>
+        <option value="138px">138 px</option>
+        <option value="139px">139 px</option>
+        <option value="140px">140 px</option>
+        <option value="141px">141 px</option>
+        <option value="142px">142 px</option>
+        <option value="143px">143 px</option>
+        <option value="144px">144 px</option>
+        <option value="145px">145 px</option>
+        <option value="146px">146 px</option>
+        <option value="147px">147 px</option>
+        <option value="148px">148 px</option>
+        <option value="149px">149 px</option>
+        <option value="150px">150 px</option>
+        <option value="155px">155 px</option>
+        <option value="160px">160 px</option>
+        <option value="165px">165 px</option>
+        <option value="170px">[170 px - default]</option>
+        <option value="175px">175 px</option>
+        <option value="180px">180 px</option>
+        <option value="185px">185 px</option>
+        <option value="195px">195 px</option>
+        <option value="200px">200 px</option>
+        <option value="205px">205 px</option>
+        <option value="215px">215 px</option>
+        <option value="225px">225 px</option>
+        <option value="235px">235 px</option>
+        <option value="240px">240 px</option>
+        <option value="245px">245 px</option>
+        <option value="250px">250 px</option>
+        <option value="255px">255 px</option>
+        <option value="260px">260 px</option>
+        <option value="265px">265 px</option>
+        <option value="275px">275 px</option>
+        <option value="280px">280 px</option>
+        <option value="285px">285 px</option>
+        <option value="295px">295 px</option>
+        <option value="300px">300 px</option>
+        <option value="325px">325 px</option>
+        <option value="350px">350 px</option>
+        <option value="360px">360 px</option>
+        <option value="375px">375 px</option>
+        <option value="380px">380 px</option>
+        <option value="400px">400 px</option>
+        <option value="425px">425 px</option>
+        <option value="450px">450 px</option>
+        <option value="460px">460 px</option>
+        <option value="500px">500 px</option>
+      </param>
+
+      <param name="NMSWidth" type="list" default="100%" label="Width" description="[NMSWidth] Adjusts the scroll width." >
+        <option value="25px">25 px</option>
+        <option value="30px">30 px</option>
+        <option value="35px">35 px</option>
+        <option value="40px">40 px</option>
+        <option value="45px">45 px</option>
+        <option value="50px">50 px</option>
+        <option value="55px">55 px</option>
+        <option value="60px">60 px</option>
+        <option value="65px">65 px</option>
+        <option value="70px">70 px</option>
+        <option value="75px">75 px</option>
+        <option value="80px">80 px</option>
+        <option value="85px">85 px</option>
+        <option value="88px">88 px</option>
+        <option value="90px">90 px</option>
+        <option value="95px">95 px</option>
+        <option value="100px">100 px</option>
+        <option value="105px">105 px</option>
+        <option value="110px">110 px</option>
+        <option value="115px">115 px</option>
+        <option value="120px">120 px</option>
+        <option value="125px">125 px</option>
+        <option value="130px">130 px</option>
+        <option value="135px">135 px</option>
+        <option value="140px">140 px</option>
+        <option value="145px">145 px</option>
+        <option value="150px">150 px</option>
+        <option value="155px">155 px</option>
+        <option value="160px">160 px</option>
+        <option value="165px">165 px</option>
+        <option value="170px">170 px</option>
+        <option value="175px">175 px</option>
+        <option value="180px">180 px</option>
+        <option value="185px">185 px</option>
+        <option value="190px">190 px</option>
+        <option value="195px">195 px</option>
+        <option value="200px">200 px</option>
+        <option value="205px">205 px</option>
+        <option value="210px">210 px</option>
+        <option value="215px">215 px</option>
+        <option value="220px">220 px</option>
+        <option value="225px">225 px</option>
+        <option value="230px">230 px</option>
+        <option value="234px">234 px</option>
+        <option value="235px">235 px</option>
+        <option value="240px">240 px</option>
+        <option value="245px">245 px</option>
+        <option value="250px">250 px</option>
+        <option value="255px">255 px</option>
+        <option value="265px">265 px</option>
+        <option value="275px">275 px</option>
+        <option value="285px">285 px</option>
+        <option value="295px">295 px</option>
+        <option value="300px">300 px</option>
+        <option value="310px">310 px</option>
+        <option value="320px">320 px</option>
+        <option value="330px">330 px</option>
+        <option value="340px">340 px</option>
+        <option value="350px">350 px</option>
+        <option value="360px">360 px</option>
+        <option value="370px">370 px</option>
+        <option value="380px">380 px</option>
+        <option value="390px">390 px</option>
+        <option value="400px">400 px</option>
+        <option value="410px">410 px</option>
+        <option value="420px">420 px</option>
+        <option value="430px">430 px</option>
+        <option value="440px">440 px</option>
+        <option value="450px">450 px</option>
+        <option value="460px">460 px</option>
+        <option value="468px">468 px</option>
+        <option value="470px">470 px</option>
+        <option value="480px">480 px</option>
+        <option value="490px">490 px</option>
+        <option value="500px">500 px</option>
+        <option value="510px">510 px</option>
+        <option value="520px">520 px</option>
+        <option value="530px">530 px</option>
+        <option value="540px">540 px</option>
+        <option value="550px">550 px</option>
+        <option value="560px">560 px</option>
+        <option value="570px">570 px</option>
+        <option value="580px">580 px</option>
+        <option value="590px">590 px</option>
+        <option value="600px">600 px</option>
+        <option value="640px">640 px</option>
+        <option value="30%">30%</option>
+        <option value="40%">40%</option>
+        <option value="50%">50%</option>
+        <option value="60%">60%</option>
+        <option value="70%">70%</option>
+        <option value="80%">80%</option>
+        <option value="90%">90%</option>
+        <option value="100%">[100% - default]</option>
+      </param>
+
+      <param name="NMSTextCutoff" type="list" default="0" label="Text Cutoff" description="[NMSTextCutoff] limits the amount of content displayed (per item). --= Not table friendly =--" >
+        <option value="0">[No Cutoff - default]</option>
+        <option value="25">25 Characters</option>
+        <option value="30">30 Characters</option>
+        <option value="35">35 Characters</option>
+        <option value="40">40 Characters</option>
+        <option value="45">45 Characters</option>
+        <option value="50">50 Characters</option>
+        <option value="55">55 Characters</option>
+        <option value="60">60 Characters</option>
+        <option value="65">65 Characters</option>
+        <option value="70">70 Characters</option>
+        <option value="75">75 Characters</option>
+        <option value="80">80 Characters</option>
+        <option value="85">85 Characters</option>
+        <option value="88">88 Characters</option>
+        <option value="90">90 Characters</option>
+        <option value="95">95 Characters</option>
+        <option value="100">100 Characters</option>
+        <option value="105">105 Characters</option>
+        <option value="110">110 Characters</option>
+        <option value="115">115 Characters</option>
+        <option value="120">120 Characters</option>
+        <option value="125">125 Characters</option>
+        <option value="130">130 Characters</option>
+        <option value="135">135 Characters</option>
+        <option value="140">140 Characters</option>
+        <option value="145">145 Characters</option>
+        <option value="150">150 Characters</option>
+        <option value="155">155 Characters</option>
+        <option value="160">160 Characters</option>
+        <option value="165">165 Characters</option>
+        <option value="170">170 Characters</option>
+        <option value="175">175 Characters</option>
+        <option value="180">180 Characters</option>
+        <option value="185">185 Characters</option>
+        <option value="190">190 Characters</option>
+        <option value="195">195 Characters</option>
+        <option value="200">200 Characters</option>
+        <option value="205">205 Characters</option>
+        <option value="210">210 Characters</option>
+        <option value="215">215 Characters</option>
+        <option value="220">220 Characters</option>
+        <option value="225">225 Characters</option>
+        <option value="230">230 Characters</option>
+        <option value="234">234 Characters</option>
+        <option value="235">235 Characters</option>
+        <option value="240">240 Characters</option>
+        <option value="245">245 Characters</option>
+        <option value="250">250 Characters</option>
+        <option value="255">255 Characters</option>
+        <option value="265">265 Characters</option>
+        <option value="275">275 Characters</option>
+        <option value="285">285 Characters</option>
+        <option value="295">295 Characters</option>
+        <option value="300">300 Characters</option>
+        <option value="325">325 Characters</option>
+        <option value="350">350 Characters</option>
+        <option value="375">375 Characters</option>
+        <option value="400">400 Characters</option>
+        <option value="425">425 Characters</option>
+        <option value="450">450 Characters</option>
+        <option value="475">475 Characters</option>
+        <option value="500">500 Characters</option>
+        <option value="525">525 Characters</option>
+        <option value="550">550 Characters</option>
+        <option value="575">575 Characters</option>
+        <option value="600">600 Characters</option>
+        <option value="625">625 Characters</option>
+        <option value="650">650 Characters</option>
+        <option value="675">675 Characters</option>
+        <option value="700">700 Characters</option>
+        <option value="725">725 Characters</option>
+        <option value="750">750 Characters</option>
+        <option value="775">775 Characters</option>
+        <option value="800">800 Characters</option>
+        <option value="850">850 Characters</option>
+        <option value="900">900 Characters</option>
+        <option value="950">950 Characters</option>
+        <option value="1000">1000 Characters</option>
+      </param>
+
+      <param name="NMSLineCount" type="radio" default="2" label="Line Count" description="[NMSLineCount] The number of BRs or HRs to add after each item." >
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">[2 - default]</option>
+        <option value="3">3</option> 
+        <option value="4">4</option> 
+        <option value="5">5</option> 
+        <option value="6">6</option> 
+        <option value="7">7</option> 
+      </param>
+
+      <param name="NMSLineCountChar" type="radio" default="0" label="Line Char" description="[NMSLineCountChar] " >
+        <option value="0">[No Space Break (BR) - default]</option>
+        <option value="1">Horizontal Rule (HR)</option>
+      </param>
+
+      <param name="NMSAlign" type="radio" default="left" label="Scroll Text Align" description="[NMSAlign] " >
+        <option value="left">[Left - default]</option>
+        <option value="center">Center</option>
+        <option value="justify">Justify</option>
+        <option value="right">Right</option> 
+      </param>
+
+      <param name="NMSScrollAmount" type="radio" default="2" label="Scroll Amount" description="[NMSScrollAmount] Controls the amount of lines the scroller jumps." >
+        <option value="1">1 line</option>
+        <option value="2">[2 lines - default]</option> 
+        <option value="3">3 lines</option> 
+        <option value="4">4 lines</option> 
+     </param> 
+
+     <param name="NMSScrollDelay" type="list" default="50" label="Scroll Delay" description="[NMSScrollDelay] Controls the speed of the scroller. The lower the number the faster 'Newsflash Pro' scrolls." >
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">[50 - default]</option>
+        <option value="60">60</option>
+        <option value="70">70</option>
+        <option value="80">80</option>
+        <option value="90">90</option> 
+        <option value="100">100</option>
+        <option value="110">110</option>
+        <option value="120">120</option>
+        <option value="130">130</option>
+        <option value="140">140</option>
+        <option value="150">150</option>
+        <option value="160">160</option>
+        <option value="170">170</option>
+        <option value="180">180</option>
+        <option value="190">190</option>
+        <option value="200">200</option>
+      </param>
+
+      <param name="NMSLoop" type="list" default="infinite" label="Scroll Loop Times" description="[NMSLoop] " >
+        <option value="infinite">[Continuous - default]</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option> 
+        <option value="4">4</option> 
+        <option value="5">5</option> 
+        <option value="10">10</option>
+        <option value="15">15</option>  
+        <option value="20">20</option> 
+        <option value="25">25</option> 
+      </param>
+
+      <param name="NMSBehavior" type="radio" default="up" label="Scroll Behavior" description="[NMSBehavior] " >
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+        <option value="up">[Up - default]</option>
+        <option value="down">Down</option> 
+      </param>
+
+      <param name="NMSShowContent" type="radio" default="0" label="Show Content" description="[NMSShowContent] Select a method on how to display module content?" >
+        <option value="0">[Intros Only - default]</option>
+        <option value="1">Content Only</option>
+        <option value="2">Intros and Content</option>
+        <option value="3">Titles Only</option>
+      </param>
+
+      <param name="@spacer" type="spacer" default="" label="DEBUG CONTROL" description="" />
+      <param name="NMSDeBugON" type="radio" default="FALSE" label="Scroll Debug" description="Turn debugging output on?" >
+        <option value="TRUE">Yes</option>
+        <option value="FALSE">[No - default]</option> 
+      </param>
+    </params>
+</mosinstall>

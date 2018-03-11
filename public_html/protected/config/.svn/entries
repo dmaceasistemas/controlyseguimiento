@@ -1,0 +1,40 @@
+8
+
+dir
+3950
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected/config
+svn://172.16.0.250/argos
+
+
+
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+
+svn:special svn:externals svn:needs-lock
+
+console.php
+file
+
+
+
+
+2009-10-09T16:31:09.000000Z
+bc4e7fe818d237910732ff67eda5e481
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+main.php
+file
+
+
+
+
+2009-10-22T12:55:58.000000Z
+f3d4dd1bb0e1e1b02fae4a178e29f828
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+

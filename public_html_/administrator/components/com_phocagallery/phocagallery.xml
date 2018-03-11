@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install method="upgrade" type="component" version="1.5.0">
+	<name>PhocaGallery</name>
+	<creationDate>13/03/2008</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail>info@phoca.cz</authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<!-- The version string is recorded in the components table -->
+	<version>1.6.3 Beta</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Phoca Gallery</description>
+
+	<!-- Install Database Section -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+
+	<!-- Uninstall Database Section -->
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Custom Install Script to execute -->
+	<installfile>install.phocagallery.php</installfile>
+
+	<!-- Custom Uninstall Script to execute -->
+	<uninstallfile>uninstall.phocagallery.php</uninstallfile>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="front">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>phocagallery.php</filename>
+		<filename>router.php</filename>
+		<filename>assets/images/icon-download.gif</filename>
+		<filename>assets/images/icon-exit.gif</filename>
+		<filename>assets/images/icon-folder-medium-images-categories.gif</filename>
+		<filename>assets/images/icon-folder-medium-images-shadow.gif</filename>
+		<filename>assets/images/icon-folder-medium-images.gif</filename>
+		<filename>assets/images/icon-folder-small-images-categories.gif</filename>
+		<filename>assets/images/icon-folder-small-images-shadow.gif</filename>
+		<filename>assets/images/icon-folder-small-images.gif</filename>
+		<filename>assets/images/icon-folder-small.gif</filename>
+		<filename>assets/images/icon-next-grey.gif</filename>
+		<filename>assets/images/icon-next.gif</filename>
+		<filename>assets/images/icon-pause-grey.gif</filename>
+		<filename>assets/images/icon-pause.gif</filename>
+		<filename>assets/images/icon-play-grey.gif</filename>
+		<filename>assets/images/icon-play.gif</filename>
+		<filename>assets/images/icon-prev-grey.gif</filename>
+		<filename>assets/images/icon-prev.gif</filename>
+		<filename>assets/images/icon-reload.gif</filename>
+		<filename>assets/images/icon-stop-grey.gif</filename>
+		<filename>assets/images/icon-stop.gif</filename>
+		<filename>assets/images/icon-up-images-shadow.gif</filename>
+		<filename>assets/images/icon-up-images.gif</filename>
+		<filename>assets/images/icon-view.gif</filename>
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/phoca_thumb_l_no_image.gif</filename>
+		<filename>assets/images/phoca_thumb_m_no_image.gif</filename>
+		<filename>assets/images/phoca_thumb_s_no_image.gif</filename>
+		<filename>assets/images/shadow1.gif</filename>
+		<filename>assets/images/shadow2.gif</filename>
+		<filename>assets/images/shadow3.gif</filename>
+		<filename>assets/images/spacer.gif</filename>
+		<filename>assets/images/theme.xml</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/phocagallery.css</filename>
+		<filename>assets/phocagalleryieall.css</filename>
+		<filename>helpers/index.html</filename>
+		<filename>helpers/phocagallery.php</filename>
+		<filename>models/categories.php</filename>
+		<filename>models/category.php</filename>
+		<filename>models/index.html</filename>
+		<filename>models/phocagalleryd.php</filename>
+		<filename>views/categories/index.html</filename>
+		<filename>views/categories/metadata.xml</filename>
+		<filename>views/categories/tmpl/default.php</filename>
+		<filename>views/categories/tmpl/default.xml</filename>
+		<filename>views/categories/tmpl/index.html</filename>
+		<filename>views/categories/view.html.php</filename>
+		<filename>views/category/index.html</filename>
+		<filename>views/category/metadata.xml</filename>
+		<filename>views/category/tmpl/default.php</filename>
+		<filename>views/category/tmpl/default.xml</filename>
+		<filename>views/category/tmpl/index.html</filename>
+		<filename>views/category/view.html.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/phocagalleryd/index.html</filename>
+		<filename>views/phocagalleryd/metadata.xml</filename>
+		<filename>views/phocagalleryd/tmpl/default.php</filename>
+		<filename>views/phocagalleryd/tmpl/index.html</filename>
+		<filename>views/phocagalleryd/view.html.php</filename>
+	</files>
+
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.com_phocagallery.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_phocagallery.menu.ini</language>
+	</languages>
+
+	<!-- Administration -->
+	<administration>
+		<menu link="option=com_phocagallery">Phoca Gallery</menu>
+		<submenu>
+			<menu link="option=com_phocagallery">Gallery</menu>
+			<menu link="option=com_phocagallery&amp;view=phocagallerycs">Categories</menu>
+			<menu link="option=com_phocagallery&amp;view=phocagalleryt">Themes</menu>
+		</submenu>
+
+		<!-- Administration Main File Copy Section -->
+		<files>
+			<filename>admin.phocagallery.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.bak</filename>
+			<filename>install.phocagallery.php</filename>
+			<filename>install.sql</filename>
+			<filename>phocagallery.xml</filename>
+			<filename>uninstall.phocagallery.php</filename>
+			<filename>uninstall.sql</filename>
+			<filename>assets/images/icon-folder-images.gif</filename>
+			<filename>assets/images/icon-folder-small.gif</filename>
+			<filename>assets/images/icon-image-small.gif</filename>
+			<filename>assets/images/icon-insert.gif</filename>
+			<filename>assets/images/icon-up-small.gif</filename>
+			<filename>assets/images/icon-up.gif</filename>
+			<filename>assets/images/icon-up_m.gif</filename>
+			<filename>assets/images/index.html</filename>
+			<filename>assets/images/install.png</filename>
+			<filename>assets/images/keep.png</filename>
+			<filename>assets/images/logo.png</filename>
+			<filename>assets/images/phoca_thumb_l_no_image.gif</filename>
+			<filename>assets/images/phoca_thumb_m_no_image.gif</filename>
+			<filename>assets/images/phoca_thumb_s_no_image.gif</filename>
+			<filename>assets/images/process.png</filename>
+			<filename>assets/images/remove.png</filename>
+			<filename>assets/images/spacer.gif</filename>
+			<filename>assets/images/update.png</filename>
+			<filename>assets/images/upgrade.png</filename>
+			<filename>assets/index.html</filename>
+			<filename>assets/phocagallery.css</filename>
+			<filename>assets/phocagalleryieall.css</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/phocagallery.php</filename>
+			<filename>controllers/phocagalleryc.php</filename>
+			<filename>controllers/phocagalleryinstall.php</filename>
+			<filename>controllers/phocagallerym.php</filename>
+			<filename>controllers/phocagalleryt.php</filename>
+			<filename>controllers/phocagalleryuninstall.php</filename>
+			<filename>elements/index.html</filename>
+			<filename>elements/phocagallery.php</filename>
+			<filename>help/cs-CZ/css/help.css</filename>
+			<filename>help/cs-CZ/css/index.html</filename>
+			<filename>help/cs-CZ/index.html</filename>
+			<filename>help/cs-CZ/screen.phocagallery.html</filename>
+			<filename>help/en-GB/css/help.css</filename>
+			<filename>help/en-GB/css/index.html</filename>
+			<filename>help/en-GB/index.html</filename>
+			<filename>help/en-GB/screen.phocagallery.html</filename>
+			<filename>helpers/index.html</filename>
+			<filename>helpers/phocagallery.php</filename>
+			<filename>models/index.html</filename>
+			<filename>models/phocagallery.php</filename>
+			<filename>models/phocagalleryc.php</filename>
+			<filename>models/phocagallerycs.php</filename>
+			<filename>models/phocagalleryd.php</filename>
+			<filename>models/phocagalleryi.php</filename>
+			<filename>models/phocagallerym.php</filename>
+			<filename>models/phocagallerys.php</filename>
+			<filename>models/phocagalleryt.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>tables/phocagallery.php</filename>
+			<filename>tables/phocagalleryc.php</filename>
+			<filename>views/index.html</filename>
+			<filename>views/phocagallery/index.html</filename>
+			<filename>views/phocagallery/tmpl/form.php</filename>
+			<filename>views/phocagallery/tmpl/index.html</filename>
+			<filename>views/phocagallery/view.html.php</filename>
+			<filename>views/phocagalleryc/index.html</filename>
+			<filename>views/phocagalleryc/tmpl/form.php</filename>
+			<filename>views/phocagalleryc/tmpl/index.html</filename>
+			<filename>views/phocagalleryc/view.html.php</filename>
+			<filename>views/phocagallerycs/index.html</filename>
+			<filename>views/phocagallerycs/tmpl/default.php</filename>
+			<filename>views/phocagallerycs/tmpl/index.html</filename>
+			<filename>views/phocagallerycs/view.html.php</filename>
+			<filename>views/phocagalleryd/index.html</filename>
+			<filename>views/phocagalleryd/tmpl/default.php</filename>
+			<filename>views/phocagalleryd/tmpl/index.html</filename>
+			<filename>views/phocagalleryd/view.html.php</filename>
+			<filename>views/phocagalleryi/index.html</filename>
+			<filename>views/phocagalleryi/tmpl/default.php</filename>
+			<filename>views/phocagalleryi/tmpl/default_folder.php</filename>
+			<filename>views/phocagalleryi/tmpl/default_image.php</filename>
+			<filename>views/phocagalleryi/tmpl/default_up.php</filename>
+			<filename>views/phocagalleryi/tmpl/index.html</filename>
+			<filename>views/phocagalleryi/view.html.php</filename>
+			<filename>views/phocagallerym/index.html</filename>
+			<filename>views/phocagallerym/tmpl/form.php</filename>
+			<filename>views/phocagallerym/tmpl/index.html</filename>
+			<filename>views/phocagallerym/view.html.php</filename>
+			<filename>views/phocagallerys/index.html</filename>
+			<filename>views/phocagallerys/tmpl/default.php</filename>
+			<filename>views/phocagallerys/tmpl/index.html</filename>
+			<filename>views/phocagallerys/view.html.php</filename>
+			<filename>views/phocagalleryt/index.html</filename>
+			<filename>views/phocagalleryt/tmpl/default.php</filename>
+			<filename>views/phocagalleryt/tmpl/default_ftp.php</filename>
+			<filename>views/phocagalleryt/tmpl/index.html</filename>
+			<filename>views/phocagalleryt/view.html.php</filename>
+		</files>
+
+		<!-- Language -->
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.com_phocagallery.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_phocagallery.menu.ini</language>
+		</languages>
+
+	</administration>
+</install>

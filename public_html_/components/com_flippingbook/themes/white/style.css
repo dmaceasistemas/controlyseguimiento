@@ -1,0 +1,160 @@
+/* BOOK LIST TABLE */
+table.fb_book_list_table {
+	border-collapse:separate;
+}
+
+/* BOOK LIST ITEM */
+td.flippingbook_book_list_item {
+	padding: 10px 5px 10px 5px;
+	border: 1px solid #E6E6E6;
+	background-color: #FFFFFF;
+	background-image: url(book_list_bg.png);
+	background-repeat: repeat-x;
+}
+
+/* BOOK LIST TITLE */
+.fb_contentheading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;	
+	text-decoration: none;
+	line-height: 20px;
+}
+
+.fb_contentheading:hover {
+	color: #666666;
+	text-decoration: none;
+}
+
+/* IMAGE IN BOOKS LIST */
+a.flippingbook_book_img {
+	margin: 0px 10px 0px 0px;
+	text-decoration: none;
+	float: left;
+}
+
+/* BOOK NAME IN BOOKS LIST */
+#flippingbook_book-name {
+	display:block;
+	padding-bottom: 5px;
+}
+
+/* DESCRIPTION IN BOOKS LIST */
+.flippingbook_book-description {
+	padding: 5px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+}
+
+
+/* BOOK STYLE */
+/* FLASH OBJECT */
+.fb_flash {
+	text-align: center;
+	margin: 5px 0px 5px 0px;
+}
+
+/* DESCRIPTION BLOCK UNDER BOOK */
+.fb_description {
+	clear: both;
+	padding: 10px 5px 10px 5px;
+	margin: 0px 0px 5px 0px;
+	border: 1px solid #E6E6E6;
+	background-color: #FFFFFF;
+	background-image: url(book_list_bg.png);
+	background-repeat: repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+
+/* PAGES DESCRIPTION */
+#fb_right_description {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	border-right: 5px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;
+	border-left: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+	padding: 5px 10px 5px 10px;
+	background-color: #FFFFFF;
+	background-image: url(book_list_bg.png);
+	background-repeat: repeat-x;
+	margin: 0px 0px 5px 0px;
+/*	If you want to display page descriptions under their pages, uncomment these two strings and specify the block width. */
+/*	width: 225px;
+	float: right;*/
+}
+
+#fb_left_description {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	border-right: 1px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;
+	border-left: 5px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+	padding: 5px 10px 5px 10px;
+	background-color: #FFFFFF;
+	background-image: url(book_list_bg.png);
+	background-repeat: repeat-x;
+	margin: 0px 0px 5px 0px;
+/*	If you want to display page descriptions under their pages, uncomment these two strings and specify the block width. */
+/*	width: 225px;
+	float: left; */
+}
+
+/* NAVIGATION BAR */
+.fb_navigation {
+	padding: 3px;
+	margin: 0px 0px 5px 0px;
+	border: 1px solid #E6E6E6;
+	background-color: #FFFFFF;
+	background-image: url(book_list_bg.png);
+	background-repeat: repeat-x;
+}
+
+/* NAVIGATION ITEMS */
+#dd_menu {
+	font-weight: normal;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #EEEEEE;
+	border: 0px none #FFFFFF;
+}
+
+#dd_menu_pages {
+	font-weight: normal;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+#fb_back {
+}
+
+#fb_first {
+}
+
+#fb_previous {
+}
+
+#fb_slideshow {
+}
+
+#fb_next {
+}
+
+#fb_last {
+}
+
+#fb_l_download {
+}
+
+#fb_r_download {
+}

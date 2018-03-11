@@ -1,0 +1,16 @@
+<?php $this->pageTitle=Yii::app()->name; ?>
+<h1>Bienvenido<?php //echo Yii::app()->user->name; ?></h1>
+<br> </br>
+<br> </br>
+<div align="center">
+<p>
+Esta es la pagina principal de nuestra <em><?php echo Yii::app()->name; ?></em>. </p>
+<p>Para solicitar y/o consultar informacion ingrese haciendo click en "Acceder"</p>
+<?php 
+      //Yii::app()->mostrarMensaje('Titulo',"trabajadores/showMe&cedper=".base64_encode(Yii::app()->user->cedula),'');
+      if (!Yii::app()->user->isGuest)
+         $this->redirect(Yii::app()->homeUrl."?r=category/admin");
+?>
+</div>
+<br> </br>
+<br> </br>

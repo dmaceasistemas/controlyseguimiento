@@ -1,0 +1,79 @@
+<h2>Lista de Labores</h2>
+
+<div class="actionBar">
+[<?php echo CHtml::link('Nueva Labor',array('create')); ?>]
+[<?php echo CHtml::link('Control de Labores',array('admin')); ?>]
+</div>
+
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>
+
+<?php foreach($models as $n=>$model): ?>
+<div class="item">
+<?php echo CHtml::encode($model->getAttributeLabel('id')); ?>:
+<?php echo CHtml::link($model->id,array('show','id'=>$model->id)); ?>
+<br/>
+<?php $criteria= new CDbCriteria;  ?>
+<?php $criteria->condition='id=:id_servicio';  ?>
+<?php $criteria->params=array(':id_servicio'=>$model->id_servicio);  ?>
+<?php $serv=Servicios::model()->find($criteria);?>
+<?php echo CHtml::encode($model->getAttributeLabel('id_servicio')); ?>:
+<?php echo CHtml::encode($serv->str_descripcion); ?>
+<br/>
+<?php $criteria= new CDbCriteria;  ?>
+<?php $criteria->condition='seq_idrubro=:id_rubro';  ?>
+<?php $criteria->params=array(':id_rubro'=>$model->id_rubro);  ?>
+<?php $rubs=Rubro::model()->find($criteria);?>
+<?php echo CHtml::encode($model->getAttributeLabel('id_rubro')); ?>:
+<?php echo CHtml::encode($rubs->str_descripcion); ?>
+<br/>
+<?php $criteria= new CDbCriteria;  ?>
+<?php $criteria->condition='codubifis=:id_sede';  ?>
+<?php $criteria->params=array(':id_sede'=>$model->id_sede);  ?>
+<?php $seds=Sedes::model()->find($criteria);?>
+<?php echo CHtml::encode($model->getAttributeLabel('id_sede')); ?>:
+<?php echo CHtml::encode($seds->desubifis); ?>
+<br/>
+<?php $criteria= new CDbCriteria;  ?>
+<?php $criteria->condition='id=:id_tipoproductor';  ?>
+<?php $criteria->params=array(':id_tipoproductor'=>$model->id_tipoproductor);  ?>
+<?php $prods=Productor::model()->find($criteria);?>
+<?php echo CHtml::encode($model->getAttributeLabel('id_tipoproductor')); ?>:
+<?php echo CHtml::encode($prods->str_descripcion); ?>
+<br/>
+<?php $criteria= new CDbCriteria;  ?>
+<?php $criteria->condition='id=:id_rangohas';  ?>
+<?php $criteria->params=array(':id_rangohas'=>$model->id_rangohas);  ?>
+<?php $rangs=Rangos::model()->find($criteria);?>
+<?php echo CHtml::encode($model->getAttributeLabel('id_rangohas')); ?>:
+<?php echo CHtml::encode($rangs->str_descripcion); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('dbl_hasfisicas')); ?>:
+<?php echo CHtml::encode($model->dbl_hasfisicas); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('dbl_haslabor')); ?>:
+<?php echo CHtml::encode($model->dbl_haslabor); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('int_prodatendidos')); ?>:
+<?php echo CHtml::encode($model->int_prodatendidos); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('dtm_fecha')); ?>:
+<?php echo CHtml::encode($model->dtm_fecha); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('dbl_kg')); ?>:
+<?php echo CHtml::encode($model->dbl_kg); ?>
+<br/>
+<?php $criteria= new CDbCriteria;  ?>
+<?php $criteria->condition='id=:id_periodo';  ?>
+<?php $criteria->params=array(':id_periodo'=>$model->id_periodo);  ?>
+<?php $pers=Periodos::model()->find($criteria);?>
+<?php echo CHtml::encode($model->getAttributeLabel('id_periodo')); ?>:
+<?php echo CHtml::encode($pers->str_observaciones); ?>
+<br/>
+<?php echo CHtml::encode($model->getAttributeLabel('str_observaciones')); ?>:
+<?php echo CHtml::encode($model->str_observaciones); ?>
+<br/>
+
+</div>
+<?php endforeach; ?>
+<br/>
+<?php $this->widget('CLinkPager',array('pages'=>$pages)); ?>

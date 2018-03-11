@@ -1,0 +1,14 @@
+<mp3config>   
+    <autostart>false</autostart>
+    <shuffle>true</shuffle>
+    <repeat>list</repeat>
+    <volume>90</volume>
+	 <showdisplay>true</showdisplay>
+	 <showplaylist>true</showplaylist>
+	 <linktarget>_blank</linktarget>
+	 <backcolor>0x000000</backcolor>
+    <frontcolor>0xffffff</frontcolor>
+    <lightcolor>0xffffff</lightcolor>
+    <jpgfile></jpgfile>
+	 <callback></callback>        
+</mp3config>

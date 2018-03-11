@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Cambiar Imagen</name>
+	<author>Carla Macías</author>
+	<creationDate>Abril 2008</creationDate>
+	<copyright>(C) 2008 Código Metrópoli</copyright>
+	<license>http://creativecommons.org/licenses/by-nc-sa/2.5/mx/</license>
+	<authorEmail>contacto@codigometropoli.com</authorEmail>
+	<authorUrl>www.codigometropoli.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Este módulo muestra una imagen de header distinta de acuerdo a la opción de nuestro menú principal</description>
+	<files>
+		<filename module="mod_cambiarimagen">mod_cambiarimagen.php</filename>
+	</files>
+	<params>
+		<param name="imagen_default" type="text" default="" label="Imagen por default" description="Imagen por default del header que aparecerá en las secciones de nuestro menú principal" />
+	</params>
+</mosinstall>

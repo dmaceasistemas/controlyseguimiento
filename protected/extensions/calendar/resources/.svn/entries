@@ -1,0 +1,61 @@
+8
+
+dir
+3950
+svn://172.16.0.250/argos/trunk/controlSeguimiento/protected/extensions/calendar/resources
+svn://172.16.0.250/argos
+
+
+
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+
+svn:special svn:externals svn:needs-lock
+
+calendar-handler.js
+file
+
+
+
+
+2009-10-09T18:12:58.000000Z
+02e45a996308cc3653dce5e6feab2ce0
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+lang
+dir
+
+calendar-setup.js
+file
+
+
+
+
+2009-10-09T18:12:58.000000Z
+02748cf1c00fb5b610878f118277abe7
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+styles
+dir
+
+calendar.js
+file
+
+
+
+
+2009-10-09T18:12:58.000000Z
+a2825716ed0856da4ce8684eca19d530
+2009-10-22T12:40:08.615193Z
+3950
+tchinchilla
+
+skins
+dir
+

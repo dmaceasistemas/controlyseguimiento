@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>Joomla Updater</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>Nov 2008</creationDate>
+	<author>Rahman Haghparast</author>
+	<authorEmail>haghparast@gmail.com</authorEmail>
+	<authorUrl>http://www.realtyna.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.4.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>
+    <![CDATA[
+  	This component updates Joomla from its official website to the latest version. <br />
+	It was developed by <a href="mailto:haghparast@gmail.com">Rahman Haghparast</a> as a part of <a href="http://www.realtyna.com" target="_blank">Realtyna</a> software section. <br />
+	Email me for any questions and give me your ideas to make this component better. <br />
+	Special thanks to Vincent Blavet (<a href="http://www.phpconcept.net" target="_blank">http://www.phpconcept.net</a>) for his <a href="http://www.phpconcept.net/pclzip/index.en.php" target="_blank">pclzip</a> class <br />
+	Apache mod_curl should be enabled for this component to run properly.	<br />
+	As in version 1.1 the component will work without mod_curl too. <br />
+	As in version 1.2 an icon is added to joomla control panel and checks the latest version automatically when the admin goes to the cpanel section of joomla. <br />
+	As in version 1.3 the component will update using the complete stable package or just the patch files. Thanks to <a href='mailto:micheldejoode@gmail.com'>Michel de Joode</a> for his idea and his support for this feature. <br />
+	As in version 1.4 the component will replace all files even if they have been changed by users. It will also show the error information upon facing any kind of errors.<br />
+	
+	]]>
+	</description>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>joomlaupdater.php</filename>
+		<filename>controller.php</filename>
+		<filename>pclzip.lib.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/joomlaupdater/index.html</filename>
+		<filename>views/joomlaupdater/view.html.php</filename>
+		<filename>views/joomlaupdater/tmpl/index.html</filename>
+		<filename>views/joomlaupdater/tmpl/default.php</filename>
+	</files>
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_joomlaupdater/images/logo.png">Update Joomla</menu>
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+	<!-- Site Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>admin.joomlaupdater.php</filename>
+			<filename>images/logo.png</filename>
+			<filename>core/latestversion.php</filename>
+			<filename>core/magic-logo.png</filename>
+			<filename>core/mod_quickicon.php</filename>
+			<filename>install.php</filename>
+			<filename>uninstall.php</filename>
+		</files>		
+	</administration>
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+</install>
